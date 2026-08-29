@@ -83,3 +83,8 @@ ol { padding-left: 1.2rem; }
   h1 { font-size: 2rem; }
   .logo { height: 32px; }
 }
+
+.card img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 0.65rem; }
+.illust { margin: 0.85rem 0 1rem; }
+.illust img { width: 100%; height: auto; border-radius: 10px; }
+.illust figcaption { margin-top: 0.4rem; font-size: 0.85rem; color: #4a5158; }
