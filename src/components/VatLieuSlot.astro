@@ -1,23 +1,32 @@
 ---
+interface Item {
+  name: string;
+  image: string;
+}
 interface Props {
-  items: string[];
+  items: Item[];
 }
 const { items } = Astro.props;
+const b = import.meta.env.BASE_URL;
+const caption = (name: string) =>
+  `Minh họa thùng ${name}. Không phải lon đóng gói thật. Không phải việc Archihouz đã làm.`;
 ---
 <section class="vat-lieu">
   <div class="wrap">
     <h2>Vật liệu dùng khi xem nhà</h2>
     <p>Loại nào dùng, chốt khi xem nhà. Dưới đây là ví dụ sản phẩm Seamax, không phải việc đã làm.</p>
     <div class="cards">
-      {items.map((name) => (
+      {items.map((item) => (
         <article class="card">
-          <div
+          <img
             class="pack-shot"
-            role="img"
-            aria-label={`Ảnh sản phẩm Seamax ${name}. Không phải việc Archihouz đã làm.`}
-          ></div>
-          <h3>{name}</h3>
-          <p class="note">Ảnh sản phẩm Seamax. Không phải công trình Archihouz.</p>
+            src={`${b}${item.image}`}
+            alt={caption(item.name)}
+            width="640"
+            height="427"
+          />
+          <h3>{item.name}</h3>
+          <p class="note">{caption(item.name)}</p>
         </article>
       ))}
     </div>
