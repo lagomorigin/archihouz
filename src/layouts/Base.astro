@@ -8,6 +8,7 @@ const { title, description } = Astro.props;
 const zalo = import.meta.env.PUBLIC_ZALO as string | undefined;
 const phone = import.meta.env.PUBLIC_PHONE as string | undefined;
 const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
+const base = import.meta.env.BASE_URL;
 const zaloHref = zalo ? (zalo.startsWith('http') ? zalo : `https://zalo.me/${zalo.replace(/^0/, '84')}`) : '#nhan-zalo';
 const phoneHref = phone ? `tel:${phone}` : '#nhan-zalo';
 ---
@@ -21,7 +22,7 @@ const phoneHref = phone ? `tel:${phone}` : '#nhan-zalo';
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="/logo-a.png" />
+    <link rel="icon" href={`${base}logo-a.png`} />
     {gaId && (
       <>
         <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
@@ -37,12 +38,12 @@ const phoneHref = phone ? `tel:${phone}` : '#nhan-zalo';
   <body>
     <header class="site">
       <div class="bar wrap">
-        <a href="/" aria-label="Archihouz">
-          <img class="logo" src="/logo-a.png" alt="Archihouz" width="160" height="32" />
+        <a href={base} aria-label="Archihouz">
+          <img class="logo" src={`${base}logo-a.png`} alt="Archihouz" width="160" height="32" />
         </a>
         <nav aria-label="Chính">
-          <a href="/chong-tham-nha-ve-sinh">Nhà vệ sinh</a>
-          <a href="/chong-tham-san-thuong">Sân thượng</a>
+          <a href={`${base}chong-tham-nha-ve-sinh/`}>Nhà vệ sinh</a>
+          <a href={`${base}chong-tham-san-thuong/`}>Sân thượng</a>
         </nav>
       </div>
     </header>

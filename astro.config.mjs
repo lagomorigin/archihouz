@@ -1,8 +1,10 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
+  site: 'https://lagomorigin.github.io',
+  base: '/archihouz',
   output: 'static',
-  trailingSlash: 'never',
+  trailingSlash: 'always',
   redirects: {
     '/chong-tham-wc': {
       status: 301,
