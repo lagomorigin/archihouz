@@ -1,0 +1,19 @@
+---
+interface Props {
+  items: string[];
+}
+const { items } = Astro.props;
+---
+<section class="vat-lieu">
+  <div class="wrap">
+    <h2>Vật liệu dùng khi xem nhà</h2>
+    <p>Loại nào dùng, chốt khi xem nhà. Dưới đây là ví dụ sản phẩm Seamax, không phải việc đã làm.</p>
+    <div class="cards">
+      {items.map((name) => (
+        <article class="card">
+          <h3>{name}</h3>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

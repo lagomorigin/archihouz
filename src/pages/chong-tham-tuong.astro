@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import VatLieuSlot from '../components/VatLieuSlot.astro';
 import { ZALO_HREF, PHONE_HREF } from '../site';
 const title = 'Chống thấm tường TP.HCM | Có hợp đồng, thử nước rồi giao, Archihouz';
 const description = 'Tường thấm mưa, ố, mốc? Gửi ảnh Zalo. Qua xem nhà, làm đúng chỗ nước vào, thử nước rồi giao. Có hợp đồng.';
@@ -40,6 +41,8 @@ const description = 'Tường thấm mưa, ố, mốc? Gửi ảnh Zalo. Qua xem
         <p>Mùa mưa: lo hết thấm trước. Sơn phủ cho đẹp có thể để ngày nắng.</p>
       </div>
     </section>
+
+    <VatLieuSlot items={['Seamax PUD', 'Seamax chống thấm tường hiệu ứng lá sen', 'Seamax PU gốc nước']} />
 
     <section class="alt">
       <div class="wrap">

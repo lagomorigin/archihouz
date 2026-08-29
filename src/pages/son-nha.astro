@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import VatLieuSlot from '../components/VatLieuSlot.astro';
 import { ZALO_HREF, PHONE_HREF } from '../site';
 const title = 'Sơn nhà TP.HCM | Có hợp đồng, xem nhà rồi mới báo giá, Archihouz';
 const description = 'Tường mốc, sơn bong, muốn sơn lại? Gửi ảnh Zalo. Mình qua xem nhà rồi mới báo giá. Có hợp đồng. Dùng Seamax, loại nào chốt khi xem nhà.';
@@ -40,6 +41,8 @@ const description = 'Tường mốc, sơn bong, muốn sơn lại? Gửi ảnh Z
         <p>Mùa mưa: sơn khi mặt tường đủ khô. Không hứa sơn đẹp dưới mưa.</p>
       </div>
     </section>
+
+    <VatLieuSlot items={['Seamax Primer In', 'Seamax Primer Alkaline', 'Seamax Super Gloss Nano']} />
 
     <section class="alt">
       <div class="wrap">
