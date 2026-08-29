@@ -1,16 +1,15 @@
 ---
 import "../styles/global.css";
+import { ZALO_HREF, PHONE_HREF } from "../site";
 interface Props {
   title: string;
   description: string;
 }
 const { title, description } = Astro.props;
-const zalo = import.meta.env.PUBLIC_ZALO as string | undefined;
-const phone = import.meta.env.PUBLIC_PHONE as string | undefined;
 const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
 const base = import.meta.env.BASE_URL;
-const zaloHref = zalo ? (zalo.startsWith('http') ? zalo : `https://zalo.me/${zalo.replace(/^0/, '84')}`) : '#nhan-zalo';
-const phoneHref = phone ? `tel:${phone}` : '#nhan-zalo';
+const zaloHref = ZALO_HREF;
+const phoneHref = PHONE_HREF;
 ---
 <!doctype html>
 <html lang="vi">
@@ -42,24 +41,20 @@ const phoneHref = phone ? `tel:${phone}` : '#nhan-zalo';
           <img class="logo" src={`${base}logo-a.png`} alt="Archihouz" width="160" height="32" />
         </a>
         <nav aria-label="Chính">
-          <a href={`${base}chong-tham-nha-ve-sinh/`}>Nhà vệ sinh</a>
-          <a href={`${base}chong-tham-san-thuong/`}>Sân thượng</a>
+          <a href={`${base}chong-tham/`}>Chống thấm</a>
+          <a href={`${base}son-nha/`}>Sơn nhà</a>
         </nav>
       </div>
     </header>
     <slot />
     <footer class="site">
       <div class="wrap">
-        <p>Archihouz. Chống thấm nhà phố tại TP.HCM. Có hợp đồng.</p>
+        <p>Archihouz. Sơn sửa nhà và chống thấm tại TP.HCM. Có hợp đồng.</p>
       </div>
     </footer>
     <div class="sticky-cta">
-      <a class="btn btn-primary" href={zaloHref} aria-disabled={zalo ? undefined : 'false'}>Nhắn Zalo</a>
-      {phone ? (
-        <a class="btn btn-ghost" href={phoneHref}>Gọi ngay</a>
-      ) : (
-        <a class="btn btn-ghost" href="#nhan-zalo">Gọi ngay</a>
-      )}
+      <a class="btn btn-primary" href={zaloHref}>Nhắn Zalo</a>
+      <a class="btn btn-ghost" href={phoneHref}>Gọi ngay</a>
     </div>
   </body>
 </html>

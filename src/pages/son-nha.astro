@@ -1,0 +1,90 @@
+---
+import Base from '../layouts/Base.astro';
+import { ZALO_HREF, PHONE_HREF } from '../site';
+const title = 'Sơn nhà TP.HCM | Có hợp đồng, xem nhà rồi mới báo giá, Archihouz';
+const description = 'Tường mốc, sơn bong, muốn sơn lại? Gửi ảnh Zalo. Mình qua xem nhà rồi mới báo giá. Có hợp đồng. Dùng Seamax, loại nào chốt khi xem nhà.';
+---
+<Base title={title} description={description}>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Muốn sơn nhà. Qua xem nhà rồi mới báo giá, có hợp đồng.</h1>
+        <p>Tường ố, sơn bong, nhà trông cũ. Đừng chọn thợ chỉ nói miệng.</p>
+        <p>Archihouz nhận sơn nhà có hợp đồng. Qua nhà xem rồi mới báo giá. Loại sơn <strong>Seamax</strong> dùng, chốt khi xem nhà.</p>
+        <p><strong>Nhắn Zalo:</strong> gửi ảnh tường và quận. Mình hẹn ngày qua xem nhà.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Hay gặp</h2>
+        <ul>
+          <li>Sơn bong, mốc, loang sau mưa.</li>
+          <li>Màu nói một đằng, sơn ra khác.</li>
+          <li>Giá nói trước, tới nơi phát sinh.</li>
+        </ul>
+        <p>Mình qua xem tại nhà. Làm đúng phần ghi trên hợp đồng. Có thêm việc thì nói trước khi làm.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Gói này làm gì</h2>
+        <p>Sơn nhà: tường trong, tường ngoài, trần. Sơn mới hay sơn lại, chốt khi xem nhà.</p>
+        <p>Dùng <strong>Seamax</strong>. Loại nào dùng, chốt khi xem nhà. Ví dụ: sơn lót Primer In hoặc Primer Alkaline, sơn phủ nội thất hoặc ngoại thất.</p>
+        <p>Gói này <strong>không gồm:</strong> chống thấm nhà vệ sinh, sân thượng, tường ẩm nặng. Tường đang thấm thì làm trang chống thấm tường, không ghép thành một gói sơn cho xong.</p>
+        <p>Mùa mưa: sơn khi mặt tường đủ khô. Không hứa sơn đẹp dưới mưa.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Làm thế nào</h2>
+        <ol>
+          <li>Gửi ảnh Zalo và quận.</li>
+          <li>Mình qua xem nhà.</li>
+          <li>Báo giá và hợp đồng (công ty; có hóa đơn nếu anh/chị cần).</li>
+          <li>Làm đúng phần đã ký.</li>
+          <li>Giao nhà.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Bảo hành</h2>
+        <p>Bảo hành <strong>có điều kiện, ghi trên giấy hợp đồng</strong>. Không bảo hành miệng. Trang này không ghi số năm.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Hỏi nhanh</h2>
+        <dl class="faq">
+          <dt>Qua xem nhà có tính tiền không?</dt>
+          <dd>Nói rõ lúc hẹn. Không hứa miễn phí mọi quận.</dd>
+          <dt>Đang mưa sơn được không?</dt>
+          <dd>Vẫn hẹn qua xem. Sơn hay chưa tùy tường khô. Không hứa sơn dưới mưa.</dd>
+          <dt>Có phải Seamaster?</dt>
+          <dd>Không. Mình dùng <strong>Seamax</strong>.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="nhan-zalo">
+      <div class="wrap">
+        <h2>Nhắn Zalo</h2>
+        <p>Muốn sơn nhà thì gửi ảnh, đừng chờ tường mốc thêm.</p>
+        <p class="note">Để lại: Sơn nhà / Quận / Ảnh / Zalo.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
