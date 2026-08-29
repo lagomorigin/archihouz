@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+const title = 'Chống thấm sân thượng TP.HCM | Có hợp đồng, thử nước rồi giao, Archihouz';
+const description = 'Sân nứt, đọng nước, trần nhà dưới thấm? Gửi ảnh Zalo. Mình qua xem nhà, làm đúng chỗ nước vào, thử nước rồi giao.';
+---
+<Base title={title} description={description}>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Sân thượng đang thấm. Làm đúng chỗ nước vào, thử nước rồi mới giao.</h1>
+        <p>Sân đọng, nứt, mưa cái là trần nhà dưới ố. Quét một lớp cho xong, trận mưa sau lại gọi thợ.</p>
+        <p>Archihouz: qua xem mặt sân, chọn đúng vật liệu, <strong>thử nước</strong>, giao có hợp đồng.</p>
+        <p><strong>Nhắn Zalo:</strong> ảnh sân và chỗ trần thấm. Mình hẹn ngày qua xem nhà.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#nhan-zalo">Nhắn Zalo</a>
+          <a class="btn btn-ghost" href="#nhan-zalo">Gọi ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Hay gặp</h2>
+        <ul>
+          <li>Nước không phải vì “thiếu sơn”. Hay gặp: nứt, đọng, khe, chân lan can.</li>
+          <li>Lớp cũ 5–10 năm (nếu nhà có) hay nứt. Đó là lớp cũ hay gặp trên nhà phố, không phải cam kết việc mới.</li>
+          <li>Trên mạng hô bảo hành dài, giấy tờ thì mập mờ.</li>
+        </ul>
+        <p>Mình không hô số năm trên trang. Bảo hành có điều kiện, ghi trên giấy hợp đồng.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Gói này làm gì</h2>
+        <p>Sân thượng, sàn mái ngoài trời: mặt sân, khe, chân lan can, chỗ đọng. Làm gì cụ thể, nói sau khi xem nhà.</p>
+        <p>Dùng <strong>Seamax</strong>. Loại nào dùng, chốt khi xem nhà. Ví dụ: PU gốc nước, CT-11A. Sơn phủ cho đẹp khi sân đủ khô. Trang này không bán “vừa chống thấm vừa sơn đẹp trong mưa”.</p>
+        <p>Không gồm: sơn mặt tiền, làm đẹp lan can. Sơn để gói riêng.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Làm thế nào</h2>
+        <ol>
+          <li>Ảnh Zalo (sân và trần).</li>
+          <li>Qua xem nhà.</li>
+          <li>Hợp đồng: công ty, làm phần nào, bảo hành có điều kiện, ghi trên giấy hợp đồng.</li>
+          <li>Làm.</li>
+          <li>Thử nước, rồi giao.</li>
+        </ol>
+        <p>Mùa mưa: lo hết thấm trước. Sơn đẹp có thể để ngày nắng. Nói trước.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Bảo hành</h2>
+        <p>Bảo hành <strong>có điều kiện, ghi trên giấy hợp đồng</strong>. Không nói miệng. Không đền tiền. Trang này không ghi số năm.</p>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Hỏi nhanh</h2>
+        <dl class="faq">
+          <dt>Đang mưa làm được không?</dt>
+          <dd>Vẫn hẹn qua xem nhà. Làm hay chưa tùy sân khô. Không hứa làm dưới mưa.</dd>
+          <dt>Sơn lan can / mặt tiền luôn?</dt>
+          <dd>Gói riêng. Trang này chỉ chống thấm sân.</dd>
+          <dt>Có phải Seamaster?</dt>
+          <dd>Không. Mình dùng <strong>Seamax</strong>.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="nhan-zalo">
+      <div class="wrap">
+        <h2>Nhắn Zalo</h2>
+        <p>Sân đang thấm thì gửi ảnh, đừng chờ trận sau.</p>
+        <p class="note">Để lại: Sân thượng / Quận / Ảnh sân và trần / Zalo.</p>
+        <form class="lead" method="get" action="#nhan-zalo">
+          <input name="quan" type="text" placeholder="Quận" autocomplete="address-level2" />
+          <input name="zalo" type="tel" inputmode="tel" placeholder="Số Zalo" autocomplete="tel" />
+          <textarea name="anh" placeholder="Link ảnh sân và trần, hoặc nhắn Zalo sau"></textarea>
+          <button class="btn btn-primary" type="submit">Gửi thông tin</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</Base>

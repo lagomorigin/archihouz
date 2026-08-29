@@ -1,0 +1,81 @@
+:root {
+  --charcoal: #1b1f24;
+  --teal: #0d7a7a;
+  --concrete: #a8adb4;
+  --white: #ffffff;
+  --mist: #f4f5f6;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--charcoal);
+  background: var(--white);
+  font-family: "Be Vietnam Pro", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--teal); }
+h1, h2, h3 { line-height: 1.25; font-weight: 700; }
+h1 { font-size: 1.65rem; margin: 0 0 0.75rem; }
+h2 { font-size: 1.2rem; margin: 0 0 0.75rem; }
+p { margin: 0 0 0.85rem; }
+ul { margin: 0 0 0.85rem; padding-left: 1.15rem; }
+.wrap { width: min(40rem, calc(100% - 2rem)); margin-inline: auto; }
+header.site {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--white);
+  border-bottom: 1px solid #eceeef;
+}
+header.site .bar {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 0.75rem; padding: 0.7rem 1rem;
+}
+.logo { height: 28px; width: auto; }
+nav a {
+  color: var(--charcoal); text-decoration: none; font-size: 0.85rem; margin-left: 0.7rem;
+}
+.hero { padding: 1.5rem 0 1.25rem; }
+.hero p { font-size: 1.02rem; }
+section { padding: 1.25rem 0; }
+section.alt { background: var(--mist); }
+.cta-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 1rem 0 0; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0.7rem 1.1rem; border-radius: 10px;
+  text-decoration: none; font-weight: 600; font-size: 1rem; border: 0;
+}
+.btn-primary { background: var(--teal); color: var(--white); }
+.btn-ghost { background: var(--white); color: var(--charcoal); border: 1px solid #d7dbde; }
+.btn[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
+.lead {
+  display: grid; gap: 0.65rem; margin-top: 0.75rem;
+}
+.lead input, .lead select, .lead textarea {
+  width: 100%; min-height: 48px; padding: 0.7rem 0.8rem;
+  border: 1px solid #d7dbde; border-radius: 8px; font: inherit;
+}
+.lead textarea { min-height: 5.5rem; }
+.faq dt { font-weight: 650; margin-top: 0.85rem; }
+.faq dd { margin: 0.25rem 0 0; }
+footer.site { padding: 1.5rem 0 6rem; color: var(--concrete); font-size: 0.9rem; }
+.sticky-cta {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+  background: var(--white); border-top: 1px solid #eceeef;
+  padding: 0.55rem 1rem calc(0.55rem + env(safe-area-inset-bottom));
+  display: flex; gap: 0.5rem;
+}
+.sticky-cta .btn { flex: 1; }
+ol { padding-left: 1.2rem; }
+.note { color: #4a5158; font-size: 0.95rem; }
+.cards { display: grid; gap: 0.7rem; }
+.card {
+  background: var(--white); border: 1px solid #eceeef; border-radius: 12px;
+  padding: 1rem; text-decoration: none; color: inherit;
+}
+@media (min-width: 720px) {
+  h1 { font-size: 2rem; }
+  .logo { height: 32px; }
+}

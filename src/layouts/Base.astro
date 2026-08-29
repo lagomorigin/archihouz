@@ -1,0 +1,64 @@
+---
+import "../styles/global.css";
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const zalo = import.meta.env.PUBLIC_ZALO as string | undefined;
+const phone = import.meta.env.PUBLIC_PHONE as string | undefined;
+const gaId = import.meta.env.PUBLIC_GA_ID as string | undefined;
+const zaloHref = zalo ? (zalo.startsWith('http') ? zalo : `https://zalo.me/${zalo.replace(/^0/, '84')}`) : '#nhan-zalo';
+const phoneHref = phone ? `tel:${phone}` : '#nhan-zalo';
+---
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/logo-a.png" />
+    {gaId && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+        <script is:inline define:vars={{ gaId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', gaId);
+        </script>
+      </>
+    )}
+  </head>
+  <body>
+    <header class="site">
+      <div class="bar wrap">
+        <a href="/" aria-label="Archihouz">
+          <img class="logo" src="/logo-a.png" alt="Archihouz" width="160" height="32" />
+        </a>
+        <nav aria-label="Chính">
+          <a href="/chong-tham-nha-ve-sinh">Nhà vệ sinh</a>
+          <a href="/chong-tham-san-thuong">Sân thượng</a>
+        </nav>
+      </div>
+    </header>
+    <slot />
+    <footer class="site">
+      <div class="wrap">
+        <p>Archihouz. Chống thấm nhà phố tại TP.HCM. Có hợp đồng.</p>
+      </div>
+    </footer>
+    <div class="sticky-cta">
+      <a class="btn btn-primary" href={zaloHref} aria-disabled={zalo ? undefined : 'false'}>Nhắn Zalo</a>
+      {phone ? (
+        <a class="btn btn-ghost" href={phoneHref}>Gọi ngay</a>
+      ) : (
+        <a class="btn btn-ghost" href="#nhan-zalo">Gọi ngay</a>
+      )}
+    </div>
+  </body>
+</html>
