@@ -11,7 +11,13 @@ const { items } = Astro.props;
     <div class="cards">
       {items.map((name) => (
         <article class="card">
+          <div
+            class="pack-shot"
+            role="img"
+            aria-label={`Ảnh sản phẩm Seamax ${name}. Không phải việc Archihouz đã làm.`}
+          ></div>
           <h3>{name}</h3>
+          <p class="note">Ảnh sản phẩm Seamax. Không phải công trình Archihouz.</p>
         </article>
       ))}
     </div>

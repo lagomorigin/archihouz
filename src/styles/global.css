@@ -77,6 +77,8 @@ ol { padding-left: 1.2rem; }
 }
 .card h3 { font-size: 1rem; margin: 0; font-weight: 650; }
 .vat-lieu .cards { margin-top: 0.85rem; }
+.pack-shot { aspect-ratio: 1; max-height: 11rem; background: var(--mist); border-radius: 8px; margin-bottom: 0.75rem; }
+.card .note { margin: 0.4rem 0 0; }
 @media (min-width: 720px) {
   h1 { font-size: 2rem; }
   .logo { height: 32px; }
