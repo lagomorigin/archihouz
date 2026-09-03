@@ -3,12 +3,17 @@ import Base from '../layouts/Base.astro';
 import VatLieuSlot from '../components/VatLieuSlot.astro';
 const title = 'Chống thấm WC TP.HCM | Có hợp đồng, thử nước rồi giao, Archihouz';
 const description = 'Nhà vệ sinh thấm sàn, thấm ống, trần nhà dưới ố? Gửi ảnh Zalo. Mình qua xem nhà rồi mới báo giá. Có hợp đồng. Làm xong thử nước mới giao.';
+const b = import.meta.env.BASE_URL;
 ---
 <Base title={title} description={description}>
   <main>
     <section class="hero">
       <div class="wrap">
         <h1>Nhà vệ sinh đang thấm. Làm xong phải thử nước mới giao.</h1>
+        <figure class="illust">
+          <img src={`${b}img/hero-chong-tham-nha-ve-sinh.png`} alt="Minh họa. Sàn ướt, trần nhà dưới ố. Không phải công trình đã làm." width="960" height="640" />
+          <figcaption>Minh họa. Sàn ướt, trần nhà dưới ố. Không phải công trình đã làm.</figcaption>
+        </figure>
         <p>Mưa một trận, sàn vệ sinh ẩm, nhà dưới ố vàng. Đừng gọi thợ chỉ nói miệng.</p>
         <p>Archihouz nhận việc có hợp đồng. Qua nhà xem rồi mới báo giá. Làm xong <strong>thử nước</strong> rồi mới giao.</p>
         <p><strong>Nhắn Zalo:</strong> gửi ảnh chỗ thấm và quận. Mình hẹn ngày qua xem nhà.</p>
