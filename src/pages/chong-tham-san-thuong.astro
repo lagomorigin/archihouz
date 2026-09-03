@@ -12,7 +12,7 @@ const b = import.meta.env.BASE_URL;
       <div class="wrap">
         <h1>Sân thượng đang thấm. Làm đúng chỗ nước vào, thử nước rồi mới giao.</h1>
         <figure class="illust">
-          <img src={`${b}img/hero-chong-tham-san-thuong.png`} alt="Minh họa. Sân nứt, đọng nước, chân lan can. Không phải công trình đã làm." width="960" height="640" />
+          <img src={`${b}img/hero-chong-tham-san-thuong.webp`} alt="Minh họa. Sân nứt, đọng nước, chân lan can. Không phải công trình đã làm." width="960" height="640" />
           <figcaption>Minh họa. Sân nứt, đọng nước, chân lan can. Không phải công trình đã làm.</figcaption>
         </figure>
         <p>Sân đọng, nứt, mưa cái là trần nhà dưới ố. Quét một lớp cho xong, trận mưa sau lại gọi thợ.</p>
@@ -47,8 +47,8 @@ const b = import.meta.env.BASE_URL;
     </section>
 
     <VatLieuSlot items={[
-      { name: 'Seamax PU gốc nước', image: 'img/pack-seamax-pu-goc-nuoc.png' },
-      { name: 'Seamax CT-11A', image: 'img/pack-seamax-ct-11a.png' },
+      { name: 'Seamax PU gốc nước', image: 'img/pack-seamax-pu-goc-nuoc.webp' },
+      { name: 'Seamax CT-11A', image: 'img/pack-seamax-ct-11a.webp' },
     ]} />
 
     <section class="alt">
@@ -95,12 +95,10 @@ const b = import.meta.env.BASE_URL;
         <h2>Nhắn Zalo</h2>
         <p>Sân đang thấm thì gửi ảnh, đừng chờ trận sau.</p>
         <p class="note">Để lại: Sân thượng / Quận / Ảnh sân và trần / Zalo.</p>
-        <form class="lead" method="get" action="#nhan-zalo">
-          <input name="quan" type="text" placeholder="Quận" autocomplete="address-level2" />
-          <input name="zalo" type="tel" inputmode="tel" placeholder="Số Zalo" autocomplete="tel" />
-          <textarea name="anh" placeholder="Link ảnh sân và trần, hoặc nhắn Zalo sau"></textarea>
-          <button class="btn btn-primary" type="submit">Gửi thông tin</button>
-        </form>
+        <div class="cta-row">
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
+        </div>
       </div>
     </section>
   </main>

@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { ZALO_HREF, PHONE_HREF } from "../site";
+import { ZALO_HREF, PHONE_HREF, SO_TAM } from "../site";
 interface Props {
   title: string;
   description: string;
@@ -50,6 +50,7 @@ const phoneHref = PHONE_HREF;
     <footer class="site">
       <div class="wrap">
         <p>Archihouz. Sơn sửa nhà và chống thấm tại TP.HCM. Có hợp đồng.</p>
+        <p>Zalo / gọi: <a href={phoneHref}>{SO_TAM}</a></p>
       </div>
     </footer>
     <div class="sticky-cta">

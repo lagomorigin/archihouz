@@ -5,10 +5,4 @@ export default defineConfig({
   base: '/archihouz',
   output: 'static',
   trailingSlash: 'always',
-  redirects: {
-    '/chong-tham-wc': {
-      status: 301,
-      destination: '/chong-tham-nha-ve-sinh',
-    },
-  },
 });

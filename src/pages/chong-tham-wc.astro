@@ -1,3 +1,21 @@
 ---
-return Astro.redirect('/chong-tham-nha-ve-sinh');
+const base = import.meta.env.BASE_URL;
+const dest = `${base}chong-tham-nha-ve-sinh/`;
+const canonical = new URL(dest, Astro.site).href;
 ---
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0;url=${dest}`} />
+    <link rel="canonical" href={canonical} />
+    <title>Chuyển hướng…</title>
+    <script is:inline define:vars={{ dest }}>
+      location.replace(dest);
+    </script>
+  </head>
+  <body>
+    <p><a href={dest}>Chống thấm nhà vệ sinh</a></p>
+  </body>
+</html>
