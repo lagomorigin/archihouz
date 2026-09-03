@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import VatLieuSlot from '../components/VatLieuSlot.astro';
+import { ZALO_HREF, PHONE_HREF } from '../site';
 const title = 'Chống thấm WC TP.HCM | Có hợp đồng, thử nước rồi giao, Archihouz';
 const description = 'Nhà vệ sinh thấm sàn, thấm ống, trần nhà dưới ố? Gửi ảnh Zalo. Mình qua xem nhà rồi mới báo giá. Có hợp đồng. Làm xong thử nước mới giao.';
 const b = import.meta.env.BASE_URL;
@@ -18,8 +19,8 @@ const b = import.meta.env.BASE_URL;
         <p>Archihouz nhận việc có hợp đồng. Qua nhà xem rồi mới báo giá. Làm xong <strong>thử nước</strong> rồi mới giao.</p>
         <p><strong>Nhắn Zalo:</strong> gửi ảnh chỗ thấm và quận. Mình hẹn ngày qua xem nhà.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#nhan-zalo">Nhắn Zalo</a>
-          <a class="btn btn-ghost" href="#nhan-zalo">Gọi ngay</a>
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
         </div>
       </div>
     </section>
