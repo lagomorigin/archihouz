@@ -2,22 +2,22 @@
 import Base from '../layouts/Base.astro';
 import VatLieuSlot from '../components/VatLieuSlot.astro';
 import { ZALO_HREF, PHONE_HREF } from '../site';
-const title = 'Chống thấm WC TP.HCM | Có hợp đồng, thử nước rồi giao, Archihouz';
-const description = 'Nhà vệ sinh thấm sàn, thấm ống, trần nhà dưới ố? Gửi ảnh Zalo. Mình qua xem nhà rồi mới báo giá. Có hợp đồng. Làm xong thử nước mới giao.';
+const title = 'Chống thấm nhà vệ sinh TP.HCM — Archihouz';
+const description = 'Trần dưới ố vì vệ sinh thấm? Archihouz khảo sát tận nơi, làm đúng chỗ nước vào. Làm xong cho nước vào kiểm tra; thấy ổn mới bàn giao nhà.';
 const b = import.meta.env.BASE_URL;
 ---
 <Base title={title} description={description}>
   <main>
     <section class="hero">
       <div class="wrap">
-        <h1>Nhà vệ sinh đang thấm. Làm xong phải thử nước mới giao.</h1>
+        <h1>Trần dưới đang ố vì nhà vệ sinh thấm?</h1>
         <figure class="illust">
           <img src={`${b}img/hero-chong-tham-nha-ve-sinh.webp`} alt="Minh họa. Sàn ướt, trần nhà dưới ố. Không phải công trình đã làm." width="960" height="640" />
           <figcaption>Minh họa. Sàn ướt, trần nhà dưới ố. Không phải công trình đã làm.</figcaption>
         </figure>
-        <p>Mưa một trận, sàn vệ sinh ẩm, nhà dưới ố vàng. Đừng gọi thợ chỉ nói miệng.</p>
-        <p>Archihouz nhận việc có hợp đồng. Qua nhà xem rồi mới báo giá. Làm xong <strong>thử nước</strong> rồi mới giao.</p>
-        <p><strong>Nhắn Zalo:</strong> gửi ảnh chỗ thấm và quận. Mình hẹn ngày qua xem nhà.</p>
+        <p>Mưa một trận là lại thấp thỏm.</p>
+        <p>Trần nhà dưới ố vàng. Sàn vệ sinh ẩm. Anh/chị bước vào nhà là thấy, đêm mưa lại khó ngủ yên.</p>
+        <p>Archihouz hiểu cảm giác đó — mệt vì đã làm tạm rồi vẫn ẩm, sợ lần sau lại tốn tiền mà không hết.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
           <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
@@ -27,22 +27,23 @@ const b = import.meta.env.BASE_URL;
 
     <section class="alt">
       <div class="wrap">
-        <h2>Hay gặp</h2>
-        <ul>
-          <li>Không biết nước vào từ đâu: ống, khe gạch, chân tường.</li>
-          <li>Làm xong, mưa lại thấm.</li>
-          <li>Giá nói trước một đằng, đục ra thành tiền khác.</li>
-        </ul>
-        <p>Mình qua xem tại nhà. Làm đúng phần ghi trên hợp đồng. Có thêm việc thì nói trước khi làm.</p>
+        <h2>Vì sao dễ thấm lại</h2>
+        <p>Nhà vệ sinh thấm lâu thường không phải vì thiếu một lớp sơn.</p>
+        <p>Nước hay len từ chỗ ống xuyên sàn, từ khe gạch, hoặc chân tường. Chỉ phủ mặt mà bỏ những chỗ đó thì tuần sau vẫn ẩm — đó là lý do nhiều nhà làm đi làm lại.</p>
+        <p>Chúng tôi tìm đúng nguồn nước trước, rồi mới chọn cách làm.</p>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <h2>Gói này làm gì</h2>
-        <p>Nhà vệ sinh: sàn, chân tường, chỗ ống. Có đục gạch hay không, chốt khi xem nhà, không chốt qua điện thoại.</p>
-        <p>Dùng sơn chống thấm <strong>Seamax</strong>. Loại nào dùng, chốt khi xem nhà. Ví dụ: CT-11A, PU gốc nước.</p>
-        <p>Gói này <strong>không gồm:</strong> ốp lại cả phòng, sơn trần nhà dưới, sơn mặt tiền. Cần thì nói, làm gói khác.</p>
+        <h2>Archihouz làm thế nào</h2>
+        <p>Archihouz làm việc có hợp đồng công ty.</p>
+        <p><strong>Khảo sát tận nơi</strong> — tìm chỗ nước vào, nói rõ có cần đục gạch hay không, rồi mới báo giá. Không đoán giá trên chat.</p>
+        <p>Phạm vi chúng tôi nhận: sàn vệ sinh, chân tường, chỗ ống xuyên sàn. Sơn chống thấm dùng <strong>Seamax</strong>; loại nào hợp chọn lúc khảo sát.</p>
+        <p>Không gồm ốp lại cả phòng, sơn trần tầng dưới, hay sơn mặt tiền. Cần thêm, chúng tôi nói rõ và làm riêng.</p>
+        <p>Làm xong chúng tôi cho nước vào kiểm tra; thấy ổn mới bàn giao nhà.</p>
+        <p>Bảo hành phần nào được ghi trên hợp đồng, có điều kiện — không chỉ bằng lời. Trang này không ghi số năm bảo hành.</p>
+        <p>Phí khảo sát: lúc hẹn chúng tôi nói rõ. Bao lâu xong: sau khi khảo sát mới nói được.</p>
       </div>
     </section>
 
@@ -51,45 +52,12 @@ const b = import.meta.env.BASE_URL;
       { name: 'Seamax PU gốc nước', image: 'img/pack-seamax-pu-goc-nuoc.webp' },
     ]} />
 
-    <section class="alt">
-      <div class="wrap">
-        <h2>Làm thế nào</h2>
-        <ol>
-          <li>Gửi ảnh Zalo và quận.</li>
-          <li>Mình qua xem nhà.</li>
-          <li>Báo giá và hợp đồng (công ty; có hóa đơn nếu anh/chị cần).</li>
-          <li>Làm đúng phần đã ký.</li>
-          <li>Thử nước, rồi giao nhà.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <h2>Bảo hành</h2>
-        <p>Bảo hành <strong>có điều kiện, ghi trên giấy hợp đồng</strong>. Không bảo hành miệng. Trang này không ghi số năm.</p>
-      </div>
-    </section>
-
-    <section class="alt">
-      <div class="wrap">
-        <h2>Hỏi nhanh</h2>
-        <dl class="faq">
-          <dt>Qua xem nhà có tính tiền không?</dt>
-          <dd>Nói rõ lúc hẹn. Không hứa miễn phí mọi quận.</dd>
-          <dt>Làm bao lâu?</dt>
-          <dd>Nhà vệ sinh thường xong nhanh. Số ngày nói sau khi xem nhà.</dd>
-          <dt>Thợ tự do?</dt>
-          <dd>Không. Làm với Archihouz, có hợp đồng.</dd>
-        </dl>
-      </div>
-    </section>
-
-    <section id="nhan-zalo">
+    <section class="alt" id="nhan-zalo">
       <div class="wrap">
         <h2>Nhắn Zalo</h2>
-        <p>Nhà vệ sinh thấm thì đừng để trận mưa sau. Gửi ảnh.</p>
-        <p class="note">Để lại: Nhà vệ sinh / Quận / Ảnh / Zalo.</p>
+        <p>Khi anh/chị sẵn sàng, gửi giúp 1–2 ảnh chỗ thấm và cho biết đang ở khu vực nào (TP.HCM) qua Zalo. Archihouz xem ảnh rồi hẹn ngày khảo sát.</p>
+        <p>Trần đang ố thì đừng chờ trận mưa sau.</p>
+        <p class="note">Để lại: Nhà vệ sinh / Khu vực / Ảnh / Zalo.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
           <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
