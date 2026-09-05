@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Favicon Archihouz A">
-  <!-- Thick chevron A (open bottom) via stroked polyline expanded -->
-  <path fill="none" stroke="#1B1F24" stroke-width="72" stroke-linejoin="miter" stroke-linecap="butt"
-        d="M96 420 L256 80 L416 420"/>
-  <!-- Bottom solid triangular notch -->
-  <path fill="#1B1F24" d="M256 318 L308 420 L204 420 Z"/>
+  <!-- Thick open A / chevron, flat feet — khớp wordmark anh gửi -->
+  <path fill="none" stroke="#1B1F24" stroke-width="78" stroke-linejoin="miter" stroke-linecap="butt"
+        d="M88 400 L256 72 L424 400"/>
+  <!-- Detached bottom trapezoid (không nối liền chân) -->
+  <path fill="#1B1F24" d="M198 348 L314 348 L338 400 L174 400 Z"/>
 </svg>
