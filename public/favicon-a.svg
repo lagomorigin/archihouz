@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Favicon Archihouz A">
+  <!-- Thick chevron A (open bottom) via stroked polyline expanded -->
+  <path fill="none" stroke="#1B1F24" stroke-width="72" stroke-linejoin="miter" stroke-linecap="butt"
+        d="M96 420 L256 80 L416 420"/>
+  <!-- Bottom solid triangular notch -->
+  <path fill="#1B1F24" d="M256 318 L308 420 L204 420 Z"/>
+</svg>
