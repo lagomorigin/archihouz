@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
 const title = 'Archihouz | Sơn sửa nhà và chống thấm TP.HCM';
-const description = 'Archihouz nhận sơn nhà, sơn sửa nhà và chống thấm tại TP.HCM. Qua xem nhà rồi báo giá. Có hợp đồng.';
+const description = 'Nhà đang thấm hoặc cần sơn lại? Archihouz khảo sát tận nơi, làm đúng chỗ nước vào. Có hợp đồng. Cho nước vào kiểm tra; thấy ổn mới bàn giao.';
 const b = import.meta.env.BASE_URL;
 ---
 <Base title={title} description={description}>
@@ -24,24 +24,29 @@ const b = import.meta.env.BASE_URL;
         <h2>Chọn hạng mục</h2>
         <div class="cards grid-2">
           <a class="card" href={`${b}chong-tham-nha-ve-sinh/`}>
-            <img class="icon" src={`${b}img/icon-nha-ve-sinh.webp`} alt="" width="40" height="40" />
+            <img class="icon" src={`${b}img/icon-nha-ve-sinh.webp`} alt="Minh họa nhà vệ sinh thấm. Không phải việc đã làm." width="80" height="80" />
             <strong>Nhà vệ sinh</strong>
             <p class="card-desc">Trần dưới ố, sàn ẩm</p>
           </a>
           <a class="card" href={`${b}chong-tham-san-thuong/`}>
-            <img class="icon" src={`${b}img/icon-san-thuong.webp`} alt="" width="40" height="40" />
+            <img class="icon" src={`${b}img/icon-san-thuong.webp`} alt="Minh họa sân thượng nứt. Không phải việc đã làm." width="80" height="80" />
             <strong>Sân thượng</strong>
             <p class="card-desc">Đọng nước, thấm xuống</p>
           </a>
           <a class="card" href={`${b}chong-tham-tuong/`}>
-            <img class="icon" src={`${b}img/icon-tuong-tham.webp`} alt="" width="40" height="40" />
+            <img class="icon" src={`${b}img/icon-tuong-tham.webp`} alt="Minh họa tường thấm. Không phải việc đã làm." width="80" height="80" />
             <strong>Tường thấm</strong>
             <p class="card-desc">Ẩm tường, sơn bong</p>
           </a>
           <a class="card" href={`${b}son-nha/`}>
-            <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="" width="40" height="40" />
+            <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="Minh họa sơn nhà. Không phải việc đã làm." width="80" height="80" />
             <strong>Sơn nhà</strong>
             <p class="card-desc">Sơn lại cho đẹp</p>
+          </a>
+          <a class="card" href={`${b}son-sua-nha/`}>
+            <img class="icon" src={`${b}img/icon-son-sua-nha.webp`} alt="Minh họa sơn sửa nhà. Không phải việc đã làm." width="80" height="80" />
+            <strong>Sơn sửa nhà</strong>
+            <p class="card-desc">Nhà cũ cần sơn lại</p>
           </a>
         </div>
       </div>
@@ -61,7 +66,7 @@ const b = import.meta.env.BASE_URL;
     <section>
       <div class="wrap">
         <h2>Sẵn sàng nhắn?</h2>
-        <p class="note">Gửi ảnh chỗ thấm hoặc chỗ cần sơn. Archihouz hẹn khảo sát.</p>
+        <p>Gửi ảnh chỗ thấm hoặc chỗ cần sơn. Archihouz hẹn khảo sát.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
           <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
