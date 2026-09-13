@@ -730,7 +730,7 @@ footer.site .footer-hub { margin-top: 0.75rem; font-size: 0.8rem; opacity: 0.85;
 }
 .process-card-final h3,
 .process-card-final p { color: var(--white); }
-.process-card-final .process-icon { filter: brightness(0) invert(1); }
+.process-card-final .process-icon { filter: brightness(0) invert(1); /* icon nền trong suốt */ }
 @media (min-width: 720px) {
   .process-grid {
     grid-template-columns: repeat(3, 1fr);
