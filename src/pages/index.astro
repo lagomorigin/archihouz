@@ -432,16 +432,46 @@ const b = import.meta.env.BASE_URL;
       </script>
     </section>
 
-    <section>
+        <section class="camket-band">
       <div class="wrap wide">
-        <span class="bar"></span>
-        <h2>Cam kết của chúng tôi</h2>
-        <p>Với mỗi công trình, Archihouz cam kết về chất lượng thi công, trải nghiệm và quyền lợi của khách hàng.</p>
-        <div class="criteria">
-          <article><h3>01. Đúng những gì đã thống nhất</h3><p>Phạm vi công việc, vật tư, chi phí và tiến độ được thống nhất rõ trước khi thi công.</p></article>
-          <article><h3>02. Không phát sinh tùy tiện</h3><p>Mọi thay đổi hoặc chi phí phát sinh (nếu có) đều trao đổi và thống nhất trước khi thực hiện.</p></article>
-          <article><h3>03. Đảm bảo chất lượng công trình</h3><p>Kiểm tra và nghiệm thu trước bàn giao, đảm bảo hạng mục đúng yêu cầu đã cam kết.</p></article>
-          <article><h3>04. Bảo hành rõ ràng</h3><p>Chính sách bảo hành được thể hiện rõ và Archihouz thực hiện trách nhiệm sau bàn giao.</p></article>
+        <div class="camket-split">
+          <div class="camket-copy">
+            <span class="bar"></span>
+            <h2>Cam kết của chúng tôi</h2>
+            <p>Với mỗi công trình, Archihouz cam kết về chất lượng thi công, trải nghiệm và quyền lợi của khách hàng.</p>
+            <div class="camket-grid">
+              <article>
+                <h3>01. Đúng những gì đã thống nhất</h3>
+                <p>Phạm vi công việc, vật tư, chi phí và tiến độ được thống nhất rõ trước khi thi công.</p>
+              </article>
+              <article>
+                <h3>02. Không phát sinh tùy tiện</h3>
+                <p>Mọi thay đổi hoặc chi phí phát sinh (nếu có) đều trao đổi và thống nhất trước khi thực hiện.</p>
+              </article>
+              <article>
+                <h3>03. Đảm bảo chất lượng công trình</h3>
+                <p>Kiểm tra và nghiệm thu trước bàn giao, đảm bảo hạng mục đúng yêu cầu đã cam kết.</p>
+              </article>
+              <article>
+                <h3>04. Bảo hành rõ ràng</h3>
+                <p>Chính sách bảo hành được thể hiện rõ và Archihouz thực hiện trách nhiệm sau bàn giao.</p>
+              </article>
+            </div>
+          </div>
+          <figure class="camket-visual">
+            <picture>
+              <source srcset={`${b}img/cam-ket-minh-hoa.webp`} type="image/webp" />
+              <img
+                src={`${b}img/cam-ket-minh-hoa.jpg`}
+                alt="Minh họa. Không phải công trình Archihouz đã làm."
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <figcaption>Minh họa. Không phải công trình Archihouz đã làm.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
