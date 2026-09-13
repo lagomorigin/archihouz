@@ -477,14 +477,37 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section class="alt">
+        <section class="alt khu-band">
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Khu vực phục vụ</h2>
         <p>Archihouz phục vụ sơn nhà, chống thấm và cải tạo nhà ở tại TP. Hồ Chí Minh và các khu vực lân cận — khảo sát tận nơi miễn phí.</p>
-        <div class="chips">
-          {['TP. Hồ Chí Minh','Nhà Bè','Cần Giờ','Củ Chi','Bình Dương','Long An','Đồng Nai','Vũng Tàu','Cần Thơ'].map((a) => (
-            <span class="chip">{a} — Hotline: {SO_TAM}</span>
+        <div class="khu-grid">
+          {[
+            { name: 'TP. Hồ Chí Minh', img: 'img/khu-vuc/khu-vuc-01-tp-hcm.webp' },
+            { name: 'Nhà Bè', img: 'img/khu-vuc/khu-vuc-02-nha-be.webp' },
+            { name: 'Cần Giờ', img: 'img/khu-vuc/khu-vuc-03-can-gio.webp' },
+            { name: 'Củ Chi', img: 'img/khu-vuc/khu-vuc-04-cu-chi.webp' },
+            { name: 'Bình Dương', img: 'img/khu-vuc/khu-vuc-05-binh-duong.webp' },
+            { name: 'Long An', img: 'img/khu-vuc/khu-vuc-06-long-an.webp' },
+            { name: 'Đồng Nai', img: 'img/khu-vuc/khu-vuc-07-dong-nai.webp' },
+            { name: 'Vũng Tàu', img: 'img/khu-vuc/khu-vuc-08-vung-tau.webp' },
+            { name: 'Cần Thơ', img: 'img/khu-vuc/khu-vuc-09-can-tho.webp' },
+          ].map((a) => (
+            <a class="khu-card" href={PHONE_HREF} aria-label={`Gọi {SO_TAM} — ${a.name}`}>
+              <picture>
+                <source srcset={`${b}${a.img}`} type="image/webp" />
+                <img
+                  src={`${b}${a.img.replace('.webp', '.jpg')}`}
+                  alt=""
+                  width="116"
+                  height="70"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <span class="khu-label">{a.name}</span>
+            </a>
           ))}
         </div>
       </div>

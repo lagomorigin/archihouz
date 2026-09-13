@@ -895,3 +895,54 @@ footer.site .footer-hub { margin-top: 0.75rem; font-size: 0.8rem; opacity: 0.85;
     max-height: 28rem;
   }
 }
+
+/* Khu vực phục vụ 3×3 — chữ trên ảnh */
+.khu-band { padding-bottom: 1.5rem; }
+.khu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+  max-width: 24rem; /* ~3×116 + gaps */
+}
+.khu-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 116px;
+  aspect-ratio: 116 / 70;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(15, 45, 82, 0.12);
+}
+.khu-card picture,
+.khu-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.khu-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.3rem;
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(180deg, rgba(15, 45, 82, 0.15), rgba(15, 45, 82, 0.45));
+}
+@media (min-width: 720px) {
+  .khu-grid {
+    max-width: 28rem;
+    gap: 0.65rem;
+  }
+  .khu-card { max-width: 140px; }
+  .khu-label { font-size: 0.75rem; }
+}
