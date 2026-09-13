@@ -11,6 +11,7 @@ const b = import.meta.env.BASE_URL;
     <section class="hero home">
       <div class="wrap wide">
         <div class="badge">Công ty TNHH Xây dựng Trang trí Nội thất CNC Decor</div>
+        <p class="micro">Hotline / Zalo: <a href={PHONE_HREF}>{SO_TAM}</a></p>
         <h1>Sơn nhà · Chống thấm · Cải tạo nhà ở</h1>
         <p>Archihouz đồng hành làm đẹp và bảo vệ ngôi nhà — chỉn chu từng công đoạn, chất lượng công trình và sự hài lòng của khách hàng là tiêu chuẩn cho mỗi dự án.</p>
         <div class="cta-row">
@@ -115,7 +116,7 @@ const b = import.meta.env.BASE_URL;
         <p>Archihouz phục vụ sơn nhà, chống thấm và cải tạo nhà ở tại TP. Hồ Chí Minh và các khu vực lân cận — khảo sát tận nơi miễn phí.</p>
         <div class="chips">
           {['TP. Hồ Chí Minh','Nhà Bè','Cần Giờ','Củ Chi','Bình Dương','Long An','Đồng Nai','Vũng Tàu','Cần Thơ'].map((a) => (
-            <span class="chip">{a}</span>
+            <span class="chip">{a} — Hotline: {SO_TAM}</span>
           ))}
         </div>
       </div>
