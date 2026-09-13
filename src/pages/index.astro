@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import ImgPlaceholder from '../components/ImgPlaceholder.astro';
 import Illust from '../components/Illust.astro';
 import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
 const title = 'Archihouz | Sơn nhà & chống thấm TP.HCM';
@@ -9,49 +8,104 @@ const b = import.meta.env.BASE_URL;
 ---
 <Base title={title} description={description}>
   <main>
-    <section class="hero home">
-      <div class="wrap wide">
-        <div class="badge">Công ty TNHH Xây dựng Trang trí Nội thất CNC Decor</div>
-        <p class="micro">Hotline / Zalo: <a href={PHONE_HREF}>{SO_TAM}</a></p>
-        <h1>Sơn nhà · Chống thấm · Cải tạo nhà ở</h1>
-        <p>Archihouz đồng hành làm đẹp và bảo vệ ngôi nhà — chỉn chu từng công đoạn, chất lượng công trình và sự hài lòng của khách hàng là tiêu chuẩn cho mỗi dự án.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
-          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
+    <section class="hero-split-section">
+      <div class="hero-split">
+        <figure class="hero-visual illust">
+          <img
+            src={`${b}img/hero-trang-chu.webp`}
+            alt="Minh họa. Không phải công trình đã làm."
+            width="960"
+            height="640"
+          />
+          <figcaption>Minh họa. Không phải công trình đã làm.</figcaption>
+        </figure>
+        <div class="hero-panel">
+          <div class="badge">Công ty TNHH Xây dựng Trang trí Nội thất CNC Decor</div>
+          <h1>Sơn nhà · Chống thấm · Cải tạo nhà ở</h1>
+          <p>Archihouz đồng hành làm đẹp và bảo vệ ngôi nhà — chỉn chu từng công đoạn, chất lượng công trình và sự hài lòng của khách hàng là tiêu chuẩn cho mỗi dự án.</p>
+          <ul class="check-list">
+            <li>Sơn nhà trọn gói</li>
+            <li>Sơn lại nhà cũ</li>
+            <li>Chống thấm tường</li>
+            <li>Sơn nội thất &amp; ngoại thất</li>
+            <li>Cải tạo nhà ở</li>
+            <li>Khảo sát tận nơi, báo giá rõ ràng</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+            <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
+          </div>
         </div>
-        <Illust src="img/hero-trang-chu.webp" alt="Minh họa. Không phải công trình đã làm." caption="Minh họa. Không phải công trình đã làm." aspect="21/9" />
       </div>
     </section>
 
     <section>
+      <div class="wrap wide svc-about">
+        <div>
+          <span class="bar"></span>
+          <h2>Dịch vụ</h2>
+          <div class="svc-grid">
+            <a class="card" href={`${b}son-nha-tron-goi/`}>
+              <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+              <strong>Sơn nhà trọn gói</strong><p class="card-desc">Từ khảo sát đến lớp sơn cuối</p>
+            </a>
+            <a class="card" href={`${b}son-lai-nha-cu/`}>
+              <img class="icon" src={`${b}img/icon-son-sua-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+              <strong>Sơn lại nhà cũ</strong><p class="card-desc">Xử lý bề mặt trước khi sơn mới</p>
+            </a>
+            <a class="card" href={`${b}chong-tham-tuong/`}>
+              <img class="icon" src={`${b}img/icon-tuong-tham.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+              <strong>Chống thấm tường</strong><p class="card-desc">Bắt đúng nguyên nhân, xử lý từ gốc</p>
+            </a>
+            <div class="card">
+              <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+              <strong>Sơn nội thất</strong><p class="card-desc">Không gian trong nhà</p>
+            </div>
+            <div class="card">
+              <img class="icon" src={`${b}img/icon-san-thuong.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+              <strong>Sơn ngoại thất</strong><p class="card-desc">Mặt tiền, tường ngoài</p>
+            </div>
+            <div class="card">
+              <img class="icon" src={`${b}img/icon-nha-ve-sinh.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+              <strong>Cải tạo nhà ở</strong><p class="card-desc">Phục hồi bề mặt xuống cấp</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-teaser">
+          <span class="bar"></span>
+          <h2>Về Archihouz</h2>
+          <p>Một ngôi nhà đẹp có thể bắt đầu từ một màu sơn. Nhưng để ngôi nhà luôn đẹp qua năm tháng, điều quan trọng hơn là được bảo vệ đúng cách ngay từ đầu. Đó là lý do Archihouz ra đời.</p>
+          <p>Chúng tôi mang đến các giải pháp sơn nhà, chống thấm và hoàn thiện công trình, với mong muốn giúp mỗi gia đình có một không gian không chỉ đẹp ở hiện tại, mà còn bền vững và an tâm trong những năm tháng về sau.</p>
+          <a class="btn btn-primary" href={`${b}gioi-thieu/`}>Xem giới thiệu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap wide">
+        <div>
+          <h2>Bạn cần tư vấn sơn nhà, chống thấm?</h2>
+          <p>Liên hệ nhanh qua Zalo hoặc gọi trực tiếp — khảo sát tận nơi.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-band">
       <div class="wrap wide">
         <span class="bar"></span>
-        <h2>Dịch vụ</h2>
-        <div class="cards grid-2">
-          <a class="card" href={`${b}son-nha-tron-goi/`}>
-            <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
-            <strong>Sơn nhà trọn gói</strong><p class="card-desc">Từ khảo sát đến lớp sơn cuối</p>
-          </a>
-          <a class="card" href={`${b}son-lai-nha-cu/`}>
-            <img class="icon" src={`${b}img/icon-son-sua-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
-            <strong>Sơn lại nhà cũ</strong><p class="card-desc">Xử lý bề mặt trước khi sơn mới</p>
-          </a>
-          <a class="card" href={`${b}chong-tham-tuong/`}>
-            <img class="icon" src={`${b}img/icon-tuong-tham.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
-            <strong>Chống thấm tường</strong><p class="card-desc">Bắt đúng nguyên nhân, xử lý từ gốc</p>
-          </a>
-          <div class="card">
-            <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
-            <strong>Sơn nội thất</strong><p class="card-desc">Không gian trong nhà</p>
-          </div>
-          <div class="card">
-            <img class="icon" src={`${b}img/icon-san-thuong.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
-            <strong>Sơn ngoại thất</strong><p class="card-desc">Mặt tiền, tường ngoài</p>
-          </div>
-          <div class="card">
-            <img class="icon" src={`${b}img/icon-nha-ve-sinh.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
-            <strong>Cải tạo nhà ở</strong><p class="card-desc">Phục hồi bề mặt xuống cấp</p>
-          </div>
+        <h2>Tiêu chí hoạt động</h2>
+        <p class="trust-lead">Chúng tôi hoạt động với những tiêu chí rõ ràng từ tư vấn đến thi công để giữ chữ tín với khách hàng. Dưới đây là 6 giá trị khi chọn đồng hành cùng Archihouz.</p>
+        <div class="criteria">
+          <article><h3>01. Báo giá rõ ràng – Hạn chế tối đa phát sinh</h3><p>Các hạng mục thi công, vật liệu, khối lượng và chi phí được trao đổi rõ ràng trước khi thực hiện. Ưu tiên minh bạch để khách hàng chủ động kiểm soát ngân sách.</p></article>
+          <article><h3>02. Cân đối giải pháp theo ngân sách</h3><p>Tư vấn và cân đối phương án thi công, vật liệu và phạm vi công việc dựa trên ngân sách thực tế — hướng đến giải pháp phù hợp thay vì tư vấn vượt nhu cầu.</p></article>
+          <article><h3>03. Khảo sát thực tế – Tư vấn đúng nhu cầu</h3><p>Khảo sát hiện trạng để xác định nguyên nhân, mức độ và đặc điểm từng khu vực. Đưa ra giải pháp phù hợp thay vì một phương án chung.</p></article>
+          <article><h3>04. Vật liệu rõ ràng – Lựa chọn có cơ sở</h3><p>Tư vấn chủng loại, tính năng và phạm vi sử dụng của từng sản phẩm, giúp khách hàng hiểu mình đang đầu tư vào đâu.</p></article>
+          <article><h3>05. Thi công chú trọng nền tảng</h3><p>Với chống thấm và sơn sửa, xử lý bề mặt trước khi hoàn thiện có vai trò quan trọng. Archihouz chú trọng từng bước xử lý để đảm bảo chất lượng và độ bền.</p></article>
+          <article><h3>06. Đồng hành có trách nhiệm</h3><p>Theo sát từ khảo sát, tư vấn, báo giá đến thi công và hoàn thiện — trải nghiệm dịch vụ rõ ràng và an tâm.</p></article>
         </div>
       </div>
     </section>
@@ -74,22 +128,6 @@ const b = import.meta.env.BASE_URL;
     <section>
       <div class="wrap wide">
         <span class="bar"></span>
-        <h2>Tiêu chí hoạt động</h2>
-        <p>Chúng tôi hoạt động với những tiêu chí rõ ràng từ tư vấn đến thi công để giữ chữ tín với khách hàng. Dưới đây là 6 giá trị khi chọn đồng hành cùng Archihouz.</p>
-        <div class="criteria">
-          <article><h3>01. Báo giá rõ ràng – Hạn chế tối đa phát sinh</h3><p>Các hạng mục thi công, vật liệu, khối lượng và chi phí được trao đổi rõ ràng trước khi thực hiện. Ưu tiên minh bạch để khách hàng chủ động kiểm soát ngân sách.</p></article>
-          <article><h3>02. Cân đối giải pháp theo ngân sách</h3><p>Tư vấn và cân đối phương án thi công, vật liệu và phạm vi công việc dựa trên ngân sách thực tế — hướng đến giải pháp phù hợp thay vì tư vấn vượt nhu cầu.</p></article>
-          <article><h3>03. Khảo sát thực tế – Tư vấn đúng nhu cầu</h3><p>Khảo sát hiện trạng để xác định nguyên nhân, mức độ và đặc điểm từng khu vực. Đưa ra giải pháp phù hợp thay vì một phương án chung.</p></article>
-          <article><h3>04. Vật liệu rõ ràng – Lựa chọn có cơ sở</h3><p>Tư vấn chủng loại, tính năng và phạm vi sử dụng của từng sản phẩm, giúp khách hàng hiểu mình đang đầu tư vào đâu.</p></article>
-          <article><h3>05. Thi công chú trọng nền tảng</h3><p>Với chống thấm và sơn sửa, xử lý bề mặt trước khi hoàn thiện có vai trò quan trọng. Archihouz chú trọng từng bước xử lý để đảm bảo chất lượng và độ bền.</p></article>
-          <article><h3>06. Đồng hành có trách nhiệm</h3><p>Theo sát từ khảo sát, tư vấn, báo giá đến thi công và hoàn thiện — trải nghiệm dịch vụ rõ ràng và an tâm.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="alt">
-      <div class="wrap wide">
-        <span class="bar"></span>
         <h2>Quy trình làm việc</h2>
         <p>Từ tiếp nhận nhu cầu đến hoàn thiện, Archihouz thực hiện theo quy trình rõ ràng để khách hàng dễ theo dõi và kiểm soát chất lượng.</p>
         <div class="steps">
@@ -103,11 +141,11 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section>
+    <section class="alt">
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Minh họa tình huống thường gặp</h2>
-                <div class="ph-grid">
+        <div class="ph-grid">
           <Illust src="img/gallery-01-o-vang.webp" alt="Minh họa tường/trần ố vàng. Không phải việc đã làm." caption="Minh họa. Không phải công trình đã làm." aspect="4/3" />
           <Illust src="img/gallery-02-mua-tat.webp" alt="Minh họa mưa tạt. Không phải việc đã làm." caption="Minh họa. Không phải công trình đã làm." aspect="4/3" />
           <Illust src="img/gallery-03-lan-son.webp" alt="Minh họa lăn sơn. Không phải việc đã làm." caption="Minh họa. Không phải công trình đã làm." aspect="4/3" />
@@ -118,7 +156,7 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section class="alt">
+    <section>
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Cam kết của chúng tôi</h2>
@@ -132,7 +170,7 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section>
+    <section class="alt">
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Khu vực phục vụ</h2>
@@ -145,7 +183,7 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section class="alt">
+    <section>
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Thương hiệu chúng tôi sử dụng</h2>
@@ -158,7 +196,7 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section id="tu-van">
+    <section id="tu-van" class="alt">
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Bạn cần tư vấn sơn nhà, chống thấm, cải tạo?</h2>

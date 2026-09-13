@@ -39,6 +39,15 @@ const phoneHref = PHONE_HREF;
     )}
   </head>
   <body>
+    <div class="util-bar">
+      <div class="wrap wide util-bar-inner">
+        <span class="util-left">Archihouz · Sơn nhà · Chống thấm</span>
+        <span class="util-right">
+          <a href={phoneHref}>Hotline {SO_TAM}</a>
+          <a href={zaloHref}>Zalo</a>
+        </span>
+      </div>
+    </div>
     <header class="site">
       <div class="inner wrap wide">
         <a href={base} aria-label="Archihouz">
@@ -73,14 +82,23 @@ const phoneHref = PHONE_HREF;
     </header>
     <slot />
     <footer class="site">
-      <div class="wrap wide">
-        <strong>Archihouz</strong>
-        <p>Công ty TNHH Xây dựng Trang trí Nội thất CNC Decor</p>
-        <p>Tự hào với đội ngũ thợ lành nghề trong lĩnh vực sơn nhà, chống thấm và cải tạo nhà ở. Phương châm: Tận tâm trong từng công việc – Chuẩn kỹ thuật trong từng hạng mục – Bền vững trong từng công trình.</p>
-        <p>Địa chỉ: 21/12/12 Đường Võ Thị Thừa, Phường An Phú Đông, TP Hồ Chí Minh</p>
-        <p>Zalo / gọi: <a href={phoneHref}>{SO_TAM}</a></p>
-        <p>Email: <a href="mailto:webdemo@gmail.com">webdemo@gmail.com</a></p>
-        <p class="footer-hub">Hub cũ: <a href={`${base}chong-tham/`}>Chống thấm</a> · <a href={`${base}son-nha/`}>Sơn nhà</a> · <a href={`${base}chong-tham-wc/`}>WC</a></p>
+      <div class="wrap wide footer-grid">
+        <div class="footer-col">
+          <strong>Archihouz</strong>
+          <p>Công ty TNHH Xây dựng Trang trí Nội thất CNC Decor</p>
+          <p>Tự hào với đội ngũ thợ lành nghề trong lĩnh vực sơn nhà, chống thấm và cải tạo nhà ở. Phương châm: Tận tâm trong từng công việc – Chuẩn kỹ thuật trong từng hạng mục – Bền vững trong từng công trình.</p>
+        </div>
+        <div class="footer-col">
+          <strong>Liên hệ</strong>
+          <p>Địa chỉ: 21/12/12 Đường Võ Thị Thừa, Phường An Phú Đông, TP Hồ Chí Minh</p>
+          <p>Zalo / gọi: <a href={phoneHref}>{SO_TAM}</a></p>
+          <p>Email: <a href="mailto:webdemo@gmail.com">webdemo@gmail.com</a></p>
+        </div>
+        <div class="footer-col">
+          <strong>Dịch vụ</strong>
+          <p class="footer-hub"><a href={`${base}son-nha/`}>Sơn nhà</a> · <a href={`${base}chong-tham/`}>Chống thấm</a> · <a href={`${base}chong-tham-wc/`}>WC</a></p>
+          <p class="footer-hub"><a href={`${base}gioi-thieu/`}>Giới thiệu</a> · <a href={`${base}lien-he/`}>Liên hệ</a></p>
+        </div>
       </div>
     </footer>
     <div class="sticky-cta">
