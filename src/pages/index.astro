@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Illust from '../components/Illust.astro';
+import ImgPlaceholder from '../components/ImgPlaceholder.astro';
 import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
 const title = 'Archihouz | Sơn nhà & chống thấm TP.HCM';
 const description = 'Archihouz tư vấn và thi công sơn nhà, chống thấm, cải tạo nhà ở tại TP.HCM. Khảo sát tận nơi, báo giá rõ ràng.';
@@ -99,15 +100,63 @@ const b = import.meta.env.BASE_URL;
         <span class="bar"></span>
         <h2>Tiêu chí hoạt động</h2>
         <p class="trust-lead">Chúng tôi hoạt động với những tiêu chí rõ ràng từ tư vấn đến thi công để giữ chữ tín với khách hàng. Dưới đây là 6 giá trị khi chọn đồng hành cùng Archihouz.</p>
-        <div class="criteria">
-          <article><h3>01. Báo giá rõ ràng – Hạn chế tối đa phát sinh</h3><p>Các hạng mục thi công, vật liệu, khối lượng và chi phí được trao đổi rõ ràng trước khi thực hiện. Ưu tiên minh bạch để khách hàng chủ động kiểm soát ngân sách.</p></article>
-          <article><h3>02. Cân đối giải pháp theo ngân sách</h3><p>Tư vấn và cân đối phương án thi công, vật liệu và phạm vi công việc dựa trên ngân sách thực tế — hướng đến giải pháp phù hợp thay vì tư vấn vượt nhu cầu.</p></article>
-          <article><h3>03. Khảo sát thực tế – Tư vấn đúng nhu cầu</h3><p>Khảo sát hiện trạng để xác định nguyên nhân, mức độ và đặc điểm từng khu vực. Đưa ra giải pháp phù hợp thay vì một phương án chung.</p></article>
-          <article><h3>04. Vật liệu rõ ràng – Lựa chọn có cơ sở</h3><p>Tư vấn chủng loại, tính năng và phạm vi sử dụng của từng sản phẩm, giúp khách hàng hiểu mình đang đầu tư vào đâu.</p></article>
-          <article><h3>05. Thi công chú trọng nền tảng</h3><p>Với chống thấm và sơn sửa, xử lý bề mặt trước khi hoàn thiện có vai trò quan trọng. Archihouz chú trọng từng bước xử lý để đảm bảo chất lượng và độ bền.</p></article>
-          <article><h3>06. Đồng hành có trách nhiệm</h3><p>Theo sát từ khảo sát, tư vấn, báo giá đến thi công và hoàn thiện — trải nghiệm dịch vụ rõ ràng và an tâm.</p></article>
+                <div class="criteria">
+          <article class="criteria-card">
+          <div class="criteria-media">
+            <ImgPlaceholder label="Ảnh demo tiêu chí 01 — chờ Linh" aspect="4/3" />
+          </div>
+            <div class="criteria-body">
+              <h3>01. Báo giá rõ ràng – Hạn chế tối đa phát sinh</h3>
+              <p>Các hạng mục thi công, vật liệu, khối lượng và chi phí được trao đổi rõ ràng trước khi thực hiện. Ưu tiên minh bạch để khách hàng chủ động kiểm soát ngân sách.</p>
+            </div>
+          </article>
+          <article class="criteria-card">
+          <div class="criteria-media">
+            <ImgPlaceholder label="Ảnh demo tiêu chí 02 — chờ Linh" aspect="4/3" />
+          </div>
+            <div class="criteria-body">
+              <h3>02. Cân đối giải pháp theo ngân sách</h3>
+              <p>Tư vấn và cân đối phương án thi công, vật liệu và phạm vi công việc dựa trên ngân sách thực tế — hướng đến giải pháp phù hợp thay vì tư vấn vượt nhu cầu.</p>
+            </div>
+          </article>
+          <article class="criteria-card">
+          <div class="criteria-media">
+            <ImgPlaceholder label="Ảnh demo tiêu chí 03 — chờ Linh" aspect="4/3" />
+          </div>
+            <div class="criteria-body">
+              <h3>03. Khảo sát thực tế – Tư vấn đúng nhu cầu</h3>
+              <p>Khảo sát hiện trạng để xác định nguyên nhân, mức độ và đặc điểm từng khu vực. Đưa ra giải pháp phù hợp thay vì một phương án chung.</p>
+            </div>
+          </article>
+          <article class="criteria-card">
+          <div class="criteria-media">
+            <ImgPlaceholder label="Ảnh demo tiêu chí 04 — chờ Linh" aspect="4/3" />
+          </div>
+            <div class="criteria-body">
+              <h3>04. Vật liệu rõ ràng – Lựa chọn có cơ sở</h3>
+              <p>Tư vấn chủng loại, tính năng và phạm vi sử dụng của từng sản phẩm, giúp khách hàng hiểu mình đang đầu tư vào đâu.</p>
+            </div>
+          </article>
+          <article class="criteria-card">
+          <div class="criteria-media">
+            <ImgPlaceholder label="Ảnh demo tiêu chí 05 — chờ Linh" aspect="4/3" />
+          </div>
+            <div class="criteria-body">
+              <h3>05. Thi công chú trọng nền tảng</h3>
+              <p>Với chống thấm và sơn sửa, xử lý bề mặt trước khi hoàn thiện có vai trò quan trọng. Archihouz chú trọng từng bước xử lý để đảm bảo chất lượng và độ bền.</p>
+            </div>
+          </article>
+          <article class="criteria-card">
+          <div class="criteria-media">
+            <ImgPlaceholder label="Ảnh demo tiêu chí 06 — chờ Linh" aspect="4/3" />
+          </div>
+            <div class="criteria-body">
+              <h3>06. Đồng hành có trách nhiệm</h3>
+              <p>Theo sát từ khảo sát, tư vấn, báo giá đến thi công và hoàn thiện — trải nghiệm dịch vụ rõ ràng và an tâm.</p>
+            </div>
+          </article>
         </div>
-      </div>
+</div>
     </section>
 
     <section class="alt">

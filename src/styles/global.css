@@ -521,3 +521,62 @@ footer.site .footer-hub { margin-top: 0.75rem; font-size: 0.8rem; opacity: 0.85;
   .wrap.wide { width: min(64rem, calc(100% - 2.5rem)); }
   .hero-panel { padding: 2.25rem 2rem; }
 }
+
+/* Tiêu chí: ảnh trái + chữ phải (vesinh4 demo) */
+.criteria-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.85rem;
+}
+.criteria-card .criteria-media {
+  flex: 0 0 auto;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e8eef5;
+}
+.criteria-card .criteria-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  margin: 0;
+}
+.criteria-card .criteria-media .ph {
+  margin: 0;
+}
+.criteria-card .criteria-media .ph-box {
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+.criteria-card .criteria-media .ph figcaption,
+.criteria-card .criteria-cap {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: #5a6b7c;
+}
+.criteria-card .criteria-body { min-width: 0; }
+.criteria-card .criteria-body h3 { margin: 0 0 0.35rem; }
+.criteria-card .criteria-body p { margin: 0; }
+@media (min-width: 560px) {
+  .criteria-card {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+  .criteria-card .criteria-media {
+    width: 38%;
+    max-width: 11rem;
+  }
+}
+.trust-band .criteria-card {
+  background: var(--white);
+  color: var(--navy);
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
