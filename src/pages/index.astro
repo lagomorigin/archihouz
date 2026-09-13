@@ -220,52 +220,76 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section class="process-band">
+        <section class="process-band">
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Quy trình làm việc</h2>
-        <p>Từ tiếp nhận nhu cầu đến hoàn thiện, Archihouz thực hiện theo quy trình rõ ràng để khách hàng dễ theo dõi và kiểm soát chất lượng.</p>
+        <p class="process-lead">Từ tiếp nhận nhu cầu đến hoàn thiện — quy trình rõ ràng, dễ theo dõi.</p>
         <ol class="process-grid">
           <li class="process-card">
             <span class="process-num" aria-hidden="true">01</span>
-            <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-01-tiep-nhan.webp`} alt="" width="64" height="64" />
-            <h3>Tiếp nhận nhu cầu</h3>
-            <p>Lắng nghe mong muốn và vấn đề đang gặp để xác định đúng yêu cầu.</p>
+            <div class="process-body">
+              <div class="process-head">
+                <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-01-tiep-nhan.webp`} alt="" width="40" height="40" />
+                <h3>Tiếp nhận nhu cầu</h3>
+              </div>
+              <p>Lắng nghe mong muốn và vấn đề đang gặp để xác định đúng yêu cầu.</p>
+            </div>
             <span class="process-arrow" aria-hidden="true"></span>
           </li>
           <li class="process-card">
             <span class="process-num" aria-hidden="true">02</span>
-            <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-02-khao-sat.webp`} alt="" width="64" height="64" />
-            <h3>Khảo sát &amp; đánh giá</h3>
-            <p>Kiểm tra hiện trạng bề mặt, xuống cấp hoặc thấm dột trước khi đề xuất.</p>
+            <div class="process-body">
+              <div class="process-head">
+                <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-02-khao-sat.webp`} alt="" width="40" height="40" />
+                <h3>Khảo sát &amp; đánh giá</h3>
+              </div>
+              <p>Kiểm tra hiện trạng bề mặt, xuống cấp hoặc thấm dột trước khi đề xuất.</p>
+            </div>
             <span class="process-arrow" aria-hidden="true"></span>
           </li>
           <li class="process-card">
             <span class="process-num" aria-hidden="true">03</span>
-            <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-03-tu-van.webp`} alt="" width="64" height="64" />
-            <h3>Tư vấn giải pháp &amp; báo giá</h3>
-            <p>Phương án phù hợp về kỹ thuật, vật liệu, thẩm mỹ và ngân sách. Báo giá rõ trước khi triển khai.</p>
+            <div class="process-body">
+              <div class="process-head">
+                <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-03-tu-van.webp`} alt="" width="40" height="40" />
+                <h3>Tư vấn giải pháp &amp; báo giá</h3>
+              </div>
+              <p>Phương án phù hợp kỹ thuật, vật liệu, thẩm mỹ và ngân sách. Báo giá rõ trước khi triển khai.</p>
+            </div>
             <span class="process-arrow process-arrow-end" aria-hidden="true"></span>
           </li>
           <li class="process-card">
             <span class="process-num" aria-hidden="true">04</span>
-            <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-04-chuan-bi.webp`} alt="" width="64" height="64" />
-            <h3>Chuẩn bị &amp; thi công</h3>
-            <p>Chuẩn bị bề mặt, vật tư và khu vực theo đúng quy trình.</p>
+            <div class="process-body">
+              <div class="process-head">
+                <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-04-chuan-bi.webp`} alt="" width="40" height="40" />
+                <h3>Chuẩn bị &amp; thi công</h3>
+              </div>
+              <p>Chuẩn bị bề mặt, vật tư và khu vực theo đúng quy trình.</p>
+            </div>
             <span class="process-arrow" aria-hidden="true"></span>
           </li>
           <li class="process-card">
             <span class="process-num" aria-hidden="true">05</span>
-            <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-05-kiem-tra.webp`} alt="" width="64" height="64" />
-            <h3>Kiểm tra &amp; nghiệm thu</h3>
-            <p>Kiểm tra chất lượng, hoàn thiện và nghiệm thu trước bàn giao.</p>
+            <div class="process-body">
+              <div class="process-head">
+                <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-05-kiem-tra.webp`} alt="" width="40" height="40" />
+                <h3>Kiểm tra &amp; nghiệm thu</h3>
+              </div>
+              <p>Kiểm tra chất lượng, hoàn thiện và nghiệm thu trước bàn giao.</p>
+            </div>
             <span class="process-arrow" aria-hidden="true"></span>
           </li>
           <li class="process-card process-card-final">
             <span class="process-num" aria-hidden="true">06</span>
-            <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-06-ban-giao.webp`} alt="" width="64" height="64" />
-            <h3>Bàn giao &amp; bảo hành</h3>
-            <p>Bàn giao, hướng dẫn bảo quản và thực hiện bảo hành theo thỏa thuận.</p>
+            <div class="process-body">
+              <div class="process-head">
+                <img class="process-icon" src={`${b}img/quy-trinh/icon-buoc-06-ban-giao.webp`} alt="" width="40" height="40" />
+                <h3>Bàn giao &amp; bảo hành</h3>
+              </div>
+              <p>Bàn giao, hướng dẫn bảo quản và thực hiện bảo hành theo thỏa thuận.</p>
+            </div>
           </li>
         </ol>
       </div>
