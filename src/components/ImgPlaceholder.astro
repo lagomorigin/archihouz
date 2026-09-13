@@ -1,0 +1,14 @@
+---
+interface Props {
+  label?: string;
+  aspect?: string;
+}
+const { label = "Minh họa", aspect = "16/9" } = Astro.props;
+const caption = "Minh họa / chỗ gắn ảnh — chưa phải công trình đã làm.";
+---
+<figure class="ph">
+  <div class="ph-box" style={`aspect-ratio:${aspect}`} role="img" aria-label={caption}>
+    <span>{label}</span>
+  </div>
+  <figcaption>{caption}</figcaption>
+</figure>

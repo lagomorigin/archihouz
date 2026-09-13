@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
+const title = 'Liên hệ Archihouz | Zalo & gọi trực tiếp';
+const description = 'Liên hệ Archihouz: địa chỉ An Phú Đông, TP.HCM. Nhắn Zalo hoặc gọi để đăng ký khảo sát miễn phí.';
+---
+<Base title={title} description={description}>
+  <main>
+    <section class="hero home">
+      <div class="wrap wide">
+        <div class="badge">Liên hệ</div>
+        <h1>Thông tin liên hệ</h1>
+        <p>Cách nhanh nhất để Archihouz phục vụ bạn: nhắn Zalo hoặc gọi trực tiếp.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap wide">
+        <span class="bar"></span>
+        <h2>Địa chỉ &amp; kênh liên hệ</h2>
+        <div class="criteria">
+          <article>
+            <h3>Địa chỉ</h3>
+            <p>21/12/12 Đường Võ Thị Thừa, Phường An Phú Đông, TP Hồ Chí Minh</p>
+          </article>
+          <article>
+            <h3>Điện thoại / Zalo</h3>
+            <p><a href={PHONE_HREF}>{SO_TAM}</a></p>
+          </article>
+          <article>
+            <h3>Email</h3>
+            <p class="micro">Đang cập nhật — liên hệ qua Zalo hoặc gọi điện.</p>
+          </article>
+          <article>
+            <h3>Fanpage / TikTok / YouTube</h3>
+            <p class="micro">Đang cập nhật.</p>
+          </article>
+        </div>
+        <p class="note" style="margin-top:1rem">Không dùng email demo. Số liên hệ chính: Zalo / gọi {SO_TAM}.</p>
+      </div>
+    </section>
+
+    <section class="alt" id="tu-van">
+      <div class="wrap wide">
+        <h2>Đăng ký khảo sát miễn phí</h2>
+        <p>Gửi ảnh hiện trạng và khu vực qua Zalo — Archihouz hẹn ngày khảo sát tận nơi.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo ngay</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>

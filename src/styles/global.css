@@ -142,3 +142,85 @@ ol { padding-left: 1.2rem; }
 .illust { margin: 0.85rem 0 1rem; }
 .illust img { width: 100%; height: auto; border-radius: 10px; }
 .illust figcaption { margin-top: 0.4rem; font-size: 0.85rem; color: #5a6b7c; }
+
+.wrap.wide { width: min(52rem, calc(100% - 2rem)); }
+header.site .inner.wide {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+header.site nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  max-width: 100%;
+}
+header.site nav a {
+  margin-left: 0;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+.ph { margin: 0.85rem 0 1rem; }
+.ph-box {
+  background: #d9dee5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a6b7c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-height: 8rem;
+}
+.ph figcaption { margin-top: 0.4rem; font-size: 0.85rem; color: #5a6b7c; }
+.ph-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+.hold {
+  background: #f1f5f9;
+  border: 1px dashed #94a3b8;
+  border-radius: 12px;
+  padding: 1rem;
+  color: #475569;
+  font-size: 0.95rem;
+}
+.hold strong { display: block; color: var(--navy); margin-bottom: 0.25rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 0; }
+.chip {
+  background: var(--polo);
+  color: var(--navy);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+}
+.check-list { list-style: none; padding-left: 0; }
+.check-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.45rem;
+}
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cobalt);
+  font-weight: 700;
+}
+.criteria { display: grid; gap: 0.75rem; }
+.criteria article {
+  background: var(--white);
+  border: 1px solid #e6ecf3;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+.criteria article h3 { font-size: 0.95rem; margin: 0 0 0.35rem; }
+.criteria article p { margin: 0; font-size: 0.92rem; }
+.micro { font-size: 0.85rem; color: #5a6b7c; margin: 0.5rem 0 0; }
+footer.site .footer-hub { margin-top: 0.75rem; font-size: 0.8rem; opacity: 0.85; }
+.area-list { columns: 2; gap: 1rem; font-size: 0.92rem; }
+@media (max-width: 480px) {
+  .area-list { columns: 1; }
+  .ph-grid { grid-template-columns: 1fr; }
+}

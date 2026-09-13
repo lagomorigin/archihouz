@@ -1,100 +1,62 @@
 ---
 import Base from '../layouts/Base.astro';
-import VatLieuSlot from '../components/VatLieuSlot.astro';
-import { ZALO_HREF, PHONE_HREF } from '../site';
-const b = import.meta.env.BASE_URL;
-const title = 'Chống thấm tường TP.HCM | Có hợp đồng, thử nước rồi giao, Archihouz';
-const description = 'Tường thấm mưa, ố, mốc? Gửi ảnh Zalo. Qua xem nhà, làm đúng chỗ nước vào, thử nước rồi giao. Có hợp đồng.';
+import ImgPlaceholder from '../components/ImgPlaceholder.astro';
+import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
+const title = 'Chống thấm tường TP.HCM | Archihouz';
+const description = 'Tường ố vàng, bong tróc, mốc ẩm hoặc mưa lại thấm? Archihouz khảo sát tận nơi, bắt đúng nguyên nhân, thi công trọn gói, báo giá rõ ràng.';
 ---
 <Base title={title} description={description}>
   <main>
-    <section class="hero">
-      <div class="wrap">
-        <h1>Tường đang thấm. Làm đúng chỗ nước vào, thử nước rồi mới giao.</h1>
-        <figure class="illust">
-          <img src={`${b}img/hero-chong-tham-tuong.webp`} alt="Minh họa. Nước vào từ khe, chân tường. Không phải công trình đã làm." width="960" height="640" />
-          <figcaption>Minh họa. Nước vào từ khe, chân tường. Không phải công trình đã làm.</figcaption>
-        </figure>
-        <p>Mưa tạt, tường ố, nhà trong ẩm. Đừng gọi thợ quét một lớp cho xong.</p>
-        <p>Archihouz nhận chống thấm tường có hợp đồng. Qua nhà xem rồi mới báo giá. Làm xong <strong>thử nước</strong> rồi mới giao.</p>
-        <p><strong>Nhắn Zalo:</strong> gửi ảnh tường thấm và khu vực. Mình hẹn ngày qua xem nhà.</p>
+    <section class="hero home">
+      <div class="wrap wide">
+        <div class="badge">Chống thấm tường</div>
+        <h1>Chống thấm tường: bắt bệnh chuẩn, xử lý từ gốc, bao trọn — không phát sinh</h1>
+        <p>Tường ố vàng, bong tróc, mốc ẩm hoặc cứ mưa là thấm lại? Archihouz khảo sát tận nơi, tìm nguyên nhân nước xâm nhập và đưa ra phương án phù hợp với hiện trạng — thi công trọn gói, rõ từng hạng mục, không vẽ thêm chi phí.</p>
+        <ImgPlaceholder label="Minh họa tường thấm" aspect="16/9" />
+        <p><strong>Cam kết từ Archihouz:</strong></p>
+        <ul class="check-list">
+          <li>Khảo sát tận nơi miễn phí</li>
+          <li>Bắt đúng nguyên nhân trước khi xử lý</li>
+          <li>Thi công chuẩn kỹ thuật</li>
+          <li>Bao trọn phần việc cần làm</li>
+          <li>Báo giá rõ ràng, không phát sinh</li>
+        </ul>
         <div class="cta-row">
-          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
-          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
+          <a class="btn btn-primary" href={ZALO_HREF}>Đăng ký khảo sát miễn phí</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
         </div>
       </div>
     </section>
 
-    <section class="alt">
-      <div class="wrap">
-        <h2>Hay gặp</h2>
+    <section>
+      <div class="wrap wide">
+        <span class="bar"></span>
+        <h2>Tường thấm không đáng ngại bằng việc xử lý sai rồi phải làm lại</h2>
+        <p><strong>Những gì chủ nhà thường nhìn thấy:</strong></p>
         <ul>
-          <li>Tường ngoài thấm vào, không biết từ khe, chân tường hay lớp cũ.</li>
-          <li>Lớp cũ 5–10 năm (nếu nhà có) hay nứt. Đó là lớp cũ hay gặp trên nhà phố, không phải cam kết việc mới.</li>
-          <li>Sơn lại cho đẹp rồi mưa vẫn thấm.</li>
+          <li>Tường trong nhà ố vàng sau mỗi trận mưa.</li>
+          <li>Lớp sơn bong tróc, phồng rộp mất thẩm mỹ.</li>
+          <li>Góc tường mốc đen, ẩm thấp khó chịu.</li>
+          <li>Tường ngoài xuất hiện vết nứt chân chim hoặc nứt nẻ lớn.</li>
+          <li>Nước rỉ, thấm róc rách qua khe cửa sổ.</li>
+          <li>Tường giáp nhà bên cạnh luôn ẩm ướt.</li>
+          <li>Toàn bộ mặt tiền xuống cấp trầm trọng.</li>
         </ul>
-        <p>Mình không hô số năm trên trang. Bảo hành có điều kiện, ghi trên giấy hợp đồng.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <h2>Gói này làm gì</h2>
-        <p>Chống thấm tường: tường ngoài, tường giáp mưa tạt, chân tường. Phạm vi chốt khi xem nhà.</p>
-        <p>Dùng <strong>vật liệu Seamax</strong>. Loại nào dùng, chốt khi xem nhà. Ví dụ: PUD, sơn tường hiệu ứng lá sen, PU gốc nước.</p>
-        <p>Gói này <strong>không gồm:</strong> sơn cả nhà, sơn mặt tiền cho đẹp, chống thấm sân thượng, chống thấm nhà vệ sinh. Cần sơn nhà thì trang sơn nhà. Cần sân hay vệ sinh thì trang đã có.</p>
-        <p>Mùa mưa: lo hết thấm trước. Sơn phủ cho đẹp có thể để ngày nắng.</p>
-      </div>
-    </section>
-
-    <VatLieuSlot items={[
-      { name: 'Seamax PUD', image: 'img/pack-seamax-pud.webp' },
-      { name: 'Seamax chống thấm tường hiệu ứng lá sen', image: 'img/pack-seamax-la-sen.webp' },
-      { name: 'Seamax PU gốc nước', image: 'img/pack-seamax-pu-goc-nuoc.webp' },
-    ]} />
-
-    <section class="alt">
-      <div class="wrap">
-        <h2>Làm thế nào</h2>
-        <ol>
-          <li>Gửi ảnh Zalo và khu vực.</li>
-          <li>Qua xem nhà.</li>
-          <li>Báo giá và hợp đồng (công ty; có hóa đơn nếu anh/chị cần).</li>
-          <li>Làm đúng phần đã ký.</li>
-          <li>Thử nước, rồi giao nhà.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <h2>Bảo hành</h2>
-        <p>Bảo hành <strong>có điều kiện, ghi trên giấy hợp đồng</strong>. Không bảo hành miệng. Trang này không ghi số năm.</p>
+        <p><strong>Điều chủ nhà thực sự lo lắng:</strong></p>
+        <p><em>“Chống thấm đợt này xong… rồi vài tháng sau có bị thấm lại không?”</em></p>
+        <p>Không ai muốn rơi vào cảnh vừa bỏ một khoản tiền lớn để cạo sơn, trét bả, quét chống thấm xong, chỉ vài cơn mưa sau lại thấy tường ố, mốc, bong tróc như cũ.</p>
       </div>
     </section>
 
     <section class="alt">
-      <div class="wrap">
-        <h2>Hỏi nhanh</h2>
-        <dl class="faq">
-          <dt>Sơn luôn mặt tiền trong gói này?</dt>
-          <dd>Không. Trang này chống thấm tường. Sơn nhà là trang khác.</dd>
-          <dt>Đang mưa làm được không?</dt>
-          <dd>Vẫn hẹn qua xem. Làm hay chưa tùy tường khô. Không hứa làm dưới mưa.</dd>
-          <dt>Có phải Seamaster?</dt>
-          <dd>Không. Mình dùng <strong>Seamax</strong>.</dd>
-        </dl>
-      </div>
-    </section>
-
-    <section id="nhan-zalo">
-      <div class="wrap">
-        <h2>Nhắn Zalo</h2>
-        <p>Tường đang thấm thì gửi ảnh, đừng chờ trận sau.</p>
-        <p class="note">Để lại: Chống thấm tường / Khu vực / Ảnh / Zalo.</p>
+      <div class="wrap wide">
+        <span class="bar"></span>
+        <h2>Hiểu đúng về chống thấm</h2>
+        <ImgPlaceholder label="Minh họa đường nước vào" aspect="16/9" />
+        <p>Chống thấm không chỉ là bôi một lớp vật liệu để tường tạm thời hết thấm ở thời điểm hiện tại. Bản chất của chống thấm là phải tìm hiểu xem nước đang đi vào từ đâu và vì sao nó có thể quay trở lại — để chặn đứng hoàn toàn chu trình đó.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
-          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi ngay</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
         </div>
       </div>
     </section>
