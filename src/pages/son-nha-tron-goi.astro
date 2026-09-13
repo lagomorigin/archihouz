@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ImgPlaceholder from '../components/ImgPlaceholder.astro';
+import Illust from '../components/Illust.astro';
 import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
 const title = 'Sơn nhà trọn gói TP.HCM | Archihouz';
 const description = 'Dịch vụ sơn nhà trọn gói từ khảo sát, tư vấn hệ sơn, chuẩn bị bề mặt đến thi công hoàn thiện. Báo giá rõ ràng, khảo sát tận nơi.';
@@ -24,7 +25,7 @@ const description = 'Dịch vụ sơn nhà trọn gói từ khảo sát, tư v�
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Không chỉ sơn lại ngôi nhà — hãy bắt đầu bằng việc hiểu đúng điều ngôi nhà cần</h2>
-        <ImgPlaceholder label="Minh họa hiện trạng" aspect="16/9" />
+        <Illust src="img/hero-son-nha.webp" alt="Minh họa. Sơn bong, con lăn. Không phải nhà đã làm." caption="Minh họa. Sơn bong, con lăn. Không phải nhà đã làm." />
         <p>Ngôi nhà đã cùng gia đình bạn đi qua nhiều năm. Đến lúc màu sơn dần phai, những bức tường không còn đẹp như trước, cũng là lúc ngôi nhà cần được chăm chút lại. Nhưng sơn nhà không chỉ là chọn một màu sơn mới. Có những bề mặt cần được xử lý trước khi sơn. Có những dấu hiệu xuống cấp cần được nhìn đúng và giải quyết đúng. Và cũng có những hạng mục chưa nhất thiết phải làm nếu ngôi nhà chưa thực sự cần.</p>
         <p>Bởi vậy, Archihouz không bắt đầu bằng việc chọn sơn. Chúng tôi bắt đầu bằng việc nhìn đúng hiện trạng và hiểu điều ngôi nhà của bạn thực sự cần.</p>
         <p>Từ khảo sát, tư vấn giải pháp, lựa chọn vật liệu đến thi công và hoàn thiện, Archihouz đồng hành trọn vẹn để ngôi nhà không chỉ mới hơn, mà còn được làm đúng hơn.</p>
@@ -129,7 +130,16 @@ const description = 'Dịch vụ sơn nhà trọn gói từ khảo sát, tư v�
         <span class="bar"></span>
         <h2>Hình ảnh công trình</h2>
         <div class="ph-grid">
-          {[1,2,3,4,5,6].map((n) => <ImgPlaceholder label={`Hình ${n}`} aspect="4/3" />)}
+          {[
+            ['img/hero-son-nha.webp','Minh họa sơn nhà'],
+            ['img/hero-son-sua-nha.webp','Minh họa sơn sửa'],
+            ['img/icon-son-nha.webp','Minh họa icon sơn'],
+            ['img/icon-son-sua-nha.webp','Minh họa icon sơn sửa'],
+            ['img/hero-chong-tham-tuong.webp','Minh họa tường'],
+            ['img/icon-tuong-tham.webp','Minh họa icon tường'],
+          ].map(([src,alt]) => (
+            <Illust src={src} alt={`${alt}. Không phải việc đã làm.`} caption="Minh họa. Không phải việc đã làm." aspect="4/3" />
+          ))}
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ImgPlaceholder from '../components/ImgPlaceholder.astro';
+import Illust from '../components/Illust.astro';
 import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
 const title = 'Archihouz | Sơn nhà & chống thấm TP.HCM';
 const description = 'Archihouz tư vấn và thi công sơn nhà, chống thấm, cải tạo nhà ở tại TP.HCM. Khảo sát tận nơi, báo giá rõ ràng.';
@@ -88,9 +89,16 @@ const b = import.meta.env.BASE_URL;
         <span class="bar"></span>
         <h2>Hình ảnh công trình</h2>
         <div class="ph-grid">
-          {[1,2,3,4,5,6].map((n) => (
-            <ImgPlaceholder label={`Hình ${n}`} aspect="4/3" />
-          ))}
+          {[
+            ['img/hero-son-nha.webp','Minh họa sơn nhà'],
+            ['img/hero-son-sua-nha.webp','Minh họa sơn sửa'],
+            ['img/hero-chong-tham-tuong.webp','Minh họa tường thấm'],
+            ['img/hero-chong-tham-nha-ve-sinh.webp','Minh họa WC'],
+            ['img/icon-son-nha.webp','Minh họa icon sơn'],
+            ['img/icon-tuong-tham.webp','Minh họa icon tường'],
+          ].map(([src,alt]) => (
+            <Illust src={src} alt={`${alt}. Không phải việc đã làm.`} caption="Minh họa. Không phải việc đã làm." aspect="4/3" />
+          ))}}
         </div>
       </div>
     </section>
