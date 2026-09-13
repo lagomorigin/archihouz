@@ -14,7 +14,7 @@ const description = 'Sơn lại nhà cũ trọn gói — khảo sát, xử lý b
         <h1>Làm mới diện mạo ngôi nhà, bắt đầu từ việc xử lý đúng hiện trạng</h1>
         <p>Nhà xuống màu, bong tróc, nứt hoặc ẩm mốc? Archihouz cung cấp dịch vụ sơn lại nhà cũ trọn gói — từ khảo sát, xử lý bề mặt đến sơn hoàn thiện, giúp ngôi nhà sạch đẹp và mới mẻ hơn.</p>
         <p class="micro">Khảo sát tận nơi · Tư vấn phương án · Báo giá rõ ràng</p>
-        <Illust src="img/hero-son-sua-nha.webp" alt="Minh họa. Nứt nhỏ, mảng vỡ. Không phải công trình đã làm." caption="Minh họa. Không phải công trình đã làm." />
+        <Illust src="img/hero-son-sua-nha.webp" alt="Minh họa. Nứt nhỏ, mảng vỡ. Không phải công trình đã làm." caption="Minh họa lớp nền. Không phải công trình đã làm." />
         <div class="cta-row">
           <a class="btn btn-primary" href={ZALO_HREF}>Đăng ký khảo sát miễn phí</a>
           <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
@@ -51,7 +51,7 @@ const description = 'Sơn lại nhà cũ trọn gói — khảo sát, xử lý b
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Vì sao sơn lại nhà cũ không chỉ là sơn một lớp sơn mới?</h2>
-        <Illust src="img/hero-son-sua-nha.webp" alt="Minh họa. Nứt nhỏ, mảng vỡ. Không phải nhà đã làm." caption="Minh họa. Nứt nhỏ, mảng vỡ. Không phải nhà đã làm." />
+        <Illust src="img/hero-son-sua-nha.webp" alt="Minh họa. Nứt nhỏ, mảng vỡ. Không phải nhà đã làm." caption="Minh họa lớp nền. Không phải công trình đã làm." />
         <p>Sơn một lớp sơn mới có thể làm ngôi nhà đẹp lên ngay hôm nay. Nhưng nếu lớp nền bên dưới chưa được xử lý đúng, những vấn đề cũ có thể nhanh chóng quay trở lại. Bởi phía sau những mảng tường bong tróc, những vết nứt hay loang ố là cả một lớp nền cần được kiểm tra và chăm sóc lại.</p>
         <p><strong>Sơn mới chỉ là bước cuối cùng. Điều quan trọng bắt đầu từ lớp nền bên dưới.</strong></p>
       </div>
@@ -93,14 +93,12 @@ const description = 'Sơn lại nhà cũ trọn gói — khảo sát, xử lý b
         <h2>Những ngôi nhà chúng tôi đã cùng làm mới</h2>
         <p>Mỗi công trình là một hiện trạng khác nhau. Mỗi lần hoàn thiện là một lần nhìn thấy ngôi nhà cũ trở lại với diện mạo mới.</p>
         <div class="ph-grid">
-          {[
-            ['img/hero-son-sua-nha.webp','Minh họa sơn sửa'],
-            ['img/hero-son-nha.webp','Minh họa sơn nhà'],
-            ['img/icon-son-sua-nha.webp','Minh họa icon'],
-            ['img/icon-son-nha.webp','Minh họa icon sơn'],
-          ].map(([src,alt]) => (
-            <Illust src={src} alt={`${alt}. Không phải trước-sau công trình thật.`} caption="Minh họa. Không phải trước-sau công trình thật." aspect="4/3" />
-          ))}
+          <ImgPlaceholder label="Chỗ gallery — chờ minh họa đợt 1" aspect="4/3" />
+          <ImgPlaceholder label="Chỗ gallery — chờ minh họa đợt 1" aspect="4/3" />
+          <ImgPlaceholder label="Chỗ gallery — chờ minh họa đợt 1" aspect="4/3" />
+          <ImgPlaceholder label="Chỗ gallery — chờ minh họa đợt 1" aspect="4/3" />
+          <ImgPlaceholder label="Chỗ gallery — chờ minh họa đợt 1" aspect="4/3" />
+          <ImgPlaceholder label="Chỗ gallery — chờ minh họa đợt 1" aspect="4/3" />
         </div>
         <p class="micro">Hiển thị theo dự án: trước thi công · trong xử lý · sau hoàn thiện · hạng mục · khu vực</p>
       </div>
