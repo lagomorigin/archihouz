@@ -349,11 +349,11 @@ footer.site .footer-hub { margin-top: 0.75rem; font-size: 0.8rem; opacity: 0.85;
 }
 .hero-split .hero-visual img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 0;
   min-height: 12rem;
-  max-height: 22rem;
+  max-height: none;
 }
 .hero-split .hero-visual figcaption {
   position: absolute;
@@ -581,36 +581,44 @@ footer.site .footer-hub { margin-top: 0.75rem; font-size: 0.8rem; opacity: 0.85;
   border-radius: 12px;
 }
 
-/* Hero full-bleed vesinh4 (Zen 13/09) */
+/* Hero full-bleed vesinh4 (Zen 13/09) — hardened */
 .hero-split-section.hero-bleed {
-  width: 100vw;
-  max-width: 100%;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  width: 100%;
+  max-width: none;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 .hero-bleed .hero-split {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
   width: 100%;
-  min-height: 18rem;
 }
 .hero-bleed .hero-visual {
+  position: relative;
   margin: 0;
-  min-height: 16rem;
+  min-height: 18rem;
+  aspect-ratio: 16 / 9;
   max-height: none;
   border-radius: 0;
   overflow: hidden;
+  background: #0F2D52;
 }
+.hero-bleed .hero-visual picture,
 .hero-bleed .hero-visual img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 16rem;
-  max-height: none;
+  display: block;
+}
+.hero-bleed .hero-visual img {
   object-fit: cover;
   object-position: center 30%;
   border-radius: 0;
+  min-height: 0;
+  max-height: none;
 }
 .hero-bleed .hero-panel {
   background: linear-gradient(165deg, #1E63D6 0%, #0F2D52 70%);
@@ -619,30 +627,45 @@ footer.site .footer-hub { margin-top: 0.75rem; font-size: 0.8rem; opacity: 0.85;
   flex-direction: column;
   justify-content: center;
 }
+.svc-grid .card picture { display: block; margin: 0 auto 0.65rem; }
+.svc-grid .card picture img.icon { margin: 0 auto; }
+.criteria-card .criteria-media picture { display: block; width: 100%; }
+.criteria-card .criteria-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  margin: 0;
+}
 @media (min-width: 720px) {
   .hero-bleed .hero-split {
     grid-template-columns: 1.65fr 1fr;
     min-height: 26rem;
     align-items: stretch;
   }
-  .hero-bleed .hero-visual,
-  .hero-bleed .hero-visual img {
+  .hero-bleed .hero-visual {
     min-height: 26rem;
+    aspect-ratio: auto;
     height: 100%;
   }
-  .hero-bleed .hero-panel {
-    padding: 2.25rem 2rem;
-  }
+  .hero-bleed .hero-panel { padding: 2.25rem 2rem; }
 }
 @media (min-width: 1100px) {
   .hero-bleed .hero-split {
     grid-template-columns: 1.85fr 1fr;
     min-height: 28rem;
   }
-  .hero-bleed .hero-visual,
-  .hero-bleed .hero-visual img {
-    min-height: 28rem;
-  }
+  .hero-bleed .hero-visual { min-height: 28rem; }
 }
-
-.sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
