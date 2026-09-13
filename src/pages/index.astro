@@ -295,19 +295,141 @@ const b = import.meta.env.BASE_URL;
       </div>
     </section>
 
-    <section class="alt">
+        <section class="situ-band alt">
       <div class="wrap wide">
         <span class="bar"></span>
         <h2>Minh họa tình huống thường gặp</h2>
-        <div class="ph-grid">
-          <Illust src="img/gallery-01-o-vang.webp" alt="Ảnh demo / minh họa. Không phải công trình đã làm." caption="Ảnh demo / minh họa. Không phải công trình đã làm." aspect="4/3" />
-          <Illust src="img/gallery-02-mua-tat.webp" alt="Ảnh demo / minh họa. Không phải công trình đã làm." caption="Ảnh demo / minh họa. Không phải công trình đã làm." aspect="4/3" />
-          <Illust src="img/gallery-03-lan-son.webp" alt="Ảnh demo / minh họa. Không phải công trình đã làm." caption="Ảnh demo / minh họa. Không phải công trình đã làm." aspect="4/3" />
-          <Illust src="img/gallery-04-ba-tuong.webp" alt="Ảnh demo / minh họa. Không phải công trình đã làm." caption="Ảnh demo / minh họa. Không phải công trình đã làm." aspect="4/3" />
-          <Illust src="img/gallery-05-khao-sat.webp" alt="Ảnh demo / minh họa. Không phải công trình đã làm." caption="Ảnh demo / minh họa. Không phải công trình đã làm." aspect="4/3" />
-          <Illust src="img/gallery-06-hoan-thien.webp" alt="Ảnh demo / minh họa. Không phải công trình đã làm." caption="Ảnh demo / minh họa. Không phải công trình đã làm." aspect="4/3" />
+        <div class="situ-grid" id="situ-grid" data-collapsed="true">
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/gallery-01-o-vang.webp`} type="image/webp" />
+              <img src={`${b}img/gallery-01-o-vang.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/gallery-02-mua-tat.webp`} type="image/webp" />
+              <img src={`${b}img/gallery-02-mua-tat.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/gallery-03-lan-son.webp`} type="image/webp" />
+              <img src={`${b}img/gallery-03-lan-son.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/gallery-04-ba-tuong.webp`} type="image/webp" />
+              <img src={`${b}img/gallery-04-ba-tuong.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/gallery-05-khao-sat.webp`} type="image/webp" />
+              <img src={`${b}img/gallery-05-khao-sat.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/gallery-06-hoan-thien.webp`} type="image/webp" />
+              <img src={`${b}img/gallery-06-hoan-thien.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/stage-01-hien-trang.webp`} type="image/webp" />
+              <img src={`${b}img/stage-01-hien-trang.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/stage-02-xu-ly.webp`} type="image/webp" />
+              <img src={`${b}img/stage-02-xu-ly.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/stage-03-son-hoan-thien.webp`} type="image/webp" />
+              <img src={`${b}img/stage-03-son-hoan-thien.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/stage-04-kiem-tra.webp`} type="image/webp" />
+              <img src={`${b}img/stage-04-kiem-tra.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/scene-duong-nuoc-vao.webp`} type="image/webp" />
+              <img src={`${b}img/scene-duong-nuoc-vao.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/tieu-chi-01.webp`} type="image/webp" />
+              <img src={`${b}img/tieu-chi-01.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/tieu-chi-02.webp`} type="image/webp" />
+              <img src={`${b}img/tieu-chi-02.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/tieu-chi-03.webp`} type="image/webp" />
+              <img src={`${b}img/tieu-chi-03.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+          <figure class="situ-item">
+            <picture>
+              <source srcset={`${b}img/tieu-chi-04.webp`} type="image/webp" />
+              <img src={`${b}img/tieu-chi-04.jpg`} alt="Ảnh demo / minh họa. Không phải công trình đã làm." width="400" height="280" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Ảnh demo / minh họa. Không phải công trình đã làm.</figcaption>
+          </figure>
+        </div>
+        <div class="situ-more-wrap">
+          <button type="button" class="btn btn-ghost situ-more" id="situ-more" aria-expanded="false" aria-controls="situ-grid">Xem thêm</button>
         </div>
       </div>
+      <script is:inline>
+        (function () {
+          var grid = document.getElementById('situ-grid');
+          var btn = document.getElementById('situ-more');
+          if (!grid || !btn) return;
+          btn.addEventListener('click', function () {
+            var open = grid.getAttribute('data-collapsed') !== 'true';
+            if (open) {
+              grid.setAttribute('data-collapsed', 'true');
+              btn.setAttribute('aria-expanded', 'false');
+              btn.textContent = 'Xem thêm';
+              grid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+              grid.setAttribute('data-collapsed', 'false');
+              btn.setAttribute('aria-expanded', 'true');
+              btn.textContent = 'Thu gọn';
+            }
+          });
+        })();
+      </script>
     </section>
 
     <section>
