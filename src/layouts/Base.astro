@@ -44,11 +44,28 @@ const phoneHref = PHONE_HREF;
         <a href={base} aria-label="Archihouz">
           <img class="logo" src={`${base}logo-header.svg`} alt="Archihouz" width="180" height="36" />
         </a>
-        <nav aria-label="Chính">
+        <nav aria-label="Chính" class="nav-main">
           <a href={base}>Trang chủ</a>
-          <a href={`${base}son-nha-tron-goi/`}>Sơn trọn gói</a>
-          <a href={`${base}son-lai-nha-cu/`}>Sơn lại nhà cũ</a>
-          <a href={`${base}chong-tham-tuong/`}>Chống thấm tường</a>
+          <details class="nav-drop">
+            <summary>Sơn Nhà</summary>
+            <div class="nav-sub">
+              <a href={`${base}son-nha-tron-goi/`}>Sơn nhà trọn gói</a>
+              <a href={`${base}son-lai-nha-cu/`}>Sơn lại nhà cũ</a>
+              <a href={`${base}son-nha-theo-khu-vuc/`}>Sơn nhà theo khu vực</a>
+            </div>
+          </details>
+          <details class="nav-drop">
+            <summary>Chống thấm</summary>
+            <div class="nav-sub">
+              <a href={`${base}chong-tham-tuong/`}>Chống thấm tường</a>
+              <a href={`${base}chong-tham-mai/`}>Chống thấm mái</a>
+              <a href={`${base}chong-tham-nha-ve-sinh/`}>Chống thấm nhà vệ sinh</a>
+              <a href={`${base}chong-tham-theo-khu-vuc/`}>Chống thấm theo khu vực</a>
+            </div>
+          </details>
+          <a href={`${base}cong-trinh/`}>Công trình</a>
+          <a href={`${base}kien-thuc/`}>Kiến thức</a>
+          <a href={`${base}cam-hung/`}>Cảm hứng</a>
           <a href={`${base}gioi-thieu/`}>Giới thiệu</a>
           <a href={`${base}lien-he/`}>Liên hệ</a>
         </nav>
@@ -58,10 +75,12 @@ const phoneHref = PHONE_HREF;
     <footer class="site">
       <div class="wrap wide">
         <strong>Archihouz</strong>
+        <p>Công ty TNHH Xây dựng Trang trí Nội thất CNC Decor</p>
         <p>Tự hào với đội ngũ thợ lành nghề trong lĩnh vực sơn nhà, chống thấm và cải tạo nhà ở. Phương châm: Tận tâm trong từng công việc – Chuẩn kỹ thuật trong từng hạng mục – Bền vững trong từng công trình.</p>
         <p>Địa chỉ: 21/12/12 Đường Võ Thị Thừa, Phường An Phú Đông, TP Hồ Chí Minh</p>
         <p>Zalo / gọi: <a href={phoneHref}>{SO_TAM}</a></p>
-        <p class="footer-hub">Hub cũ: <a href={`${base}chong-tham/`}>Chống thấm</a> · <a href={`${base}son-nha/`}>Sơn nhà</a></p>
+        <p>Email: <a href="mailto:webdemo@gmail.com">webdemo@gmail.com</a></p>
+        <p class="footer-hub">Hub cũ: <a href={`${base}chong-tham/`}>Chống thấm</a> · <a href={`${base}son-nha/`}>Sơn nhà</a> · <a href={`${base}chong-tham-wc/`}>WC</a></p>
       </div>
     </footer>
     <div class="sticky-cta">

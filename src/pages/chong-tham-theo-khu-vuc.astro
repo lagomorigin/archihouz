@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { ZALO_HREF, PHONE_HREF, SO_TAM } from '../site';
+const title = 'Chống thấm theo khu vực | Archihouz';
+const description = 'Trang đang cập nhật — Archihouz. Liên hệ Zalo để được tư vấn.';
+const b = import.meta.env.BASE_URL;
+---
+<Base title={title} description={description}>
+  <main>
+    <section class="hero home">
+      <div class="wrap wide">
+        <div class="badge">Đang cập nhật</div>
+        <h1>Chống thấm theo khu vực</h1>
+        <div class="stub-banner">
+          <p><strong>Khung menu đợt 1</strong> — Chưa có nội dung đợt 1 — stub menu.</p>
+          <p class="micro" style="margin:0">Nội dung chi tiết sẽ bổ sung ở đợt sau. Bạn vẫn có thể nhắn Zalo để được tư vấn ngay.</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
+          <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
+          <a class="btn btn-ghost" href={b}>Về trang chủ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
