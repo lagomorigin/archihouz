@@ -19,6 +19,7 @@ const b = import.meta.env.BASE_URL;
           <a class="btn btn-primary" href={ZALO_HREF}>Nhắn Zalo</a>
           <a class="btn btn-ghost" href={PHONE_HREF}>Gọi {SO_TAM}</a>
         </div>
+        <Illust src="img/hero-son-nha.webp" alt="Minh họa. Không phải công trình đã làm." caption="Minh họa. Không phải công trình đã làm." aspect="21/9" />
       </div>
     </section>
 
@@ -27,12 +28,30 @@ const b = import.meta.env.BASE_URL;
         <span class="bar"></span>
         <h2>Dịch vụ</h2>
         <div class="cards grid-2">
-          <a class="card" href={`${b}son-nha-tron-goi/`}><strong>Sơn nhà trọn gói</strong><p class="card-desc">Từ khảo sát đến lớp sơn cuối</p></a>
-          <a class="card" href={`${b}son-lai-nha-cu/`}><strong>Sơn lại nhà cũ</strong><p class="card-desc">Xử lý bề mặt trước khi sơn mới</p></a>
-          <a class="card" href={`${b}chong-tham-tuong/`}><strong>Chống thấm tường</strong><p class="card-desc">Bắt đúng nguyên nhân, xử lý từ gốc</p></a>
-          <div class="card"><strong>Sơn nội thất</strong><p class="card-desc">Không gian trong nhà</p></div>
-          <div class="card"><strong>Sơn ngoại thất</strong><p class="card-desc">Mặt tiền, tường ngoài</p></div>
-          <div class="card"><strong>Cải tạo nhà ở</strong><p class="card-desc">Phục hồi bề mặt xuống cấp</p></div>
+          <a class="card" href={`${b}son-nha-tron-goi/`}>
+            <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+            <strong>Sơn nhà trọn gói</strong><p class="card-desc">Từ khảo sát đến lớp sơn cuối</p>
+          </a>
+          <a class="card" href={`${b}son-lai-nha-cu/`}>
+            <img class="icon" src={`${b}img/icon-son-sua-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+            <strong>Sơn lại nhà cũ</strong><p class="card-desc">Xử lý bề mặt trước khi sơn mới</p>
+          </a>
+          <a class="card" href={`${b}chong-tham-tuong/`}>
+            <img class="icon" src={`${b}img/icon-tuong-tham.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+            <strong>Chống thấm tường</strong><p class="card-desc">Bắt đúng nguyên nhân, xử lý từ gốc</p>
+          </a>
+          <div class="card">
+            <img class="icon" src={`${b}img/icon-son-nha.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+            <strong>Sơn nội thất</strong><p class="card-desc">Không gian trong nhà</p>
+          </div>
+          <div class="card">
+            <img class="icon" src={`${b}img/icon-san-thuong.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+            <strong>Sơn ngoại thất</strong><p class="card-desc">Mặt tiền, tường ngoài</p>
+          </div>
+          <div class="card">
+            <img class="icon" src={`${b}img/icon-nha-ve-sinh.webp`} alt="Minh họa. Không phải công trình đã làm." width="80" height="80" />
+            <strong>Cải tạo nhà ở</strong><p class="card-desc">Phục hồi bề mặt xuống cấp</p>
+          </div>
         </div>
       </div>
     </section>
