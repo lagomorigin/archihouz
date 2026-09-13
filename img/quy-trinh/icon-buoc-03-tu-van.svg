@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" fill="#F8FAFC"/>
-<circle cx="32" cy="32" r="28" fill="none" stroke="#A7B0BA" stroke-width="2"/>
-<path d="M18 40 V24 h20 a8 8 0 0 1 0 16 H30 l-6 6z" fill="none" stroke="#0F2D52" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="28" cy="32" r="2" fill="#1E63D6"/>
+
+<path d="M16 42 V22 h22 a9 9 0 0 1 0 18 H28 l-7 7z" fill="none" stroke="#0F2D52" stroke-width="2.8" stroke-linejoin="round"/>
+<circle cx="28" cy="31" r="2.2" fill="#1E63D6"/>
+
 </svg>
