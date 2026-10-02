@@ -507,7 +507,7 @@ const b = import.meta.env.BASE_URL;
             { name: 'Vũng Tàu', img: 'img/khu-vuc/khu-vuc-08-vung-tau.webp' },
             { name: 'Cần Thơ', img: 'img/khu-vuc/khu-vuc-09-can-tho.webp' },
           ].map((a) => (
-            <a class="khu-card" href={PHONE_HREF} aria-label={`Gọi {SO_TAM} — ${a.name}`}>
+            <a class="khu-card" href={PHONE_HREF} aria-label={`Gọi ${SO_TAM} — ${a.name}`}>
               <picture>
                 <source srcset={`${b}${a.img}`} type="image/webp" />
                 <img
